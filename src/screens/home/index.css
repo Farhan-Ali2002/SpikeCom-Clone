@@ -1,0 +1,145 @@
+.home{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.screen-img-container{
+  height: 34%;
+  width: 34%;
+
+}
+.screen-img-container img{
+  height: 100%;
+  width: 100%;
+  
+}
+.description{
+    margin-left: 100px;
+}
+.heading-A{
+    margin-bottom: 20px; 
+    font-size: 42px
+}
+.orange{
+    color: #ff8905!important;
+
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 560;
+    line-height: 1.4;
+}
+p{
+    line-height: 25px
+}
+.inner-container-A{
+    /* padding: 40px; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.card-div-A-right{
+    background-color: white;
+    height: 620px;
+    width: 450px;
+/* position: absolute; */
+position: relative;
+top: 40px;
+    min-height: 620px;
+    min-width: 400px;
+    box-shadow: 2px 2px 6px #888888;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url("../../images/card-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+
+}
+
+.section-A{
+    position: relative;
+}
+.section-A-left{
+    width: 50%;
+    
+    margin-top: 150px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+.section-A-right{
+    width: 50%;
+   
+}
+.container-A{
+    /* padding: 80px; */
+    font-family: "Poppins", sans-serif;
+    /* display: flex;
+    justify-content: space-around; */
+    margin-left: 400px;
+    margin-right: 400px;
+    /* max-width: 1140px !important; */
+    /* position: absolute; */
+}
+.inner-card-heading-right-A{
+    font-size: 24px;
+    font-weight: 600;
+}
+.inner-card-para-right-A{
+    font-size: 20px;
+}
+.mt-16{
+margin-top: 16px;
+}
+.orange-container{
+    width: 100%;
+    background-color: #ff8905;
+    height: 250px;
+    /* position: absolute;
+    bottom: 2px; */
+    padding: 60px;
+    box-sizing: border-box;
+
+}
+.A-heading{
+    font-size: 40px;
+}
+
+.orange-container-desc{
+    width: 620px;
+    color: white;
+    
+}
+.orange-inner-container{
+  
+    display: flex;
+    padding-left: 400px;
+    padding-right: 400px;
+    align-items: center;
+}
+.orange-container-btn-div{
+    margin-left: 120px;
+}
+.orange-container-btn{
+    height: 50px;
+  width: 140px;
+  border: 1px solid white;
+  border-color: white!important;
+  /* background-color: #ff8905 !important; */
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+.orange-container-btn:hover{
+    border-color: #272624!important;
+    background-color: #141413 !important;
+  
+  }
