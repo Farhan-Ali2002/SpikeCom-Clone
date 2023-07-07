@@ -34,9 +34,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 560;
     line-height: 1.4;
 }
-p{
+/* p{
     line-height: 25px
-}
+} */
 .inner-container-A{
     /* padding: 40px; */
     display: flex;
@@ -78,7 +78,7 @@ top: 40px;
     width: 50%;
    
 }
-.container-A{
+.container-A, .container-B{
     /* padding: 80px; */
     font-family: "Poppins", sans-serif;
     /* display: flex;
@@ -143,3 +143,49 @@ margin-top: 16px;
     background-color: #141413 !important;
   
   }
+  .image-sliding-div{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(216, 203, 203);
+  }
+  .section-B{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+.flex-inner-B{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    box-sizing: border-box;
+    width: 600px;
+}
+.container-B-offer{
+    font-size: 34px;
+}
+.flex-B{
+    display: flex;
+    justify-content: center;
+    /* height: 200px; */
+    
+}
+.card-b-container{
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+}
+.spike-offers{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.B-icon{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: start;
+}

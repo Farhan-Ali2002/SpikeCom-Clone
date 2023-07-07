@@ -2,8 +2,11 @@ import React from "react";
 import './index.css'
 import screen from "../../images/laptop.png"
 import cardImage from "../../images/card-image.png"
+import CardBContainer from "../../components/CardContainer";
+import SpikeOffers from "../../components/spikeoffergrid";
 function Home(params) {
-    return (
+
+     return (
         <div className="home">
             
                 <div className="section-A">
@@ -59,22 +62,22 @@ function Home(params) {
                 </div>
                 
                 </div>
+                <div className="image-sliding-div"></div>
                 <div className="section-B">
 
                 <div className="container-B">
-                    <div className="row">
+                    <div className="flex-B">
+                    <div className="flex-inner-B">
                       
-                        <div className="description">
-                            <p>jdghjddjddjgdjhgd</p>
-                            <h3></h3>
-                            <p>kdghjgdh</p>
-                            <p>hjdhvhghdgchghjhdgjgdjhgd<br/>hgdhgdhgdhgd</p>
-                            <p>Sign In Now</p>
-                        </div>
+                            <p>What SpikeCom is offering?</p>
+                            <div className="container-B-offer">Explore All the Solutions in the <span className="orange">SpikeCom </span>Platform</div>
+                             
+                       
                         <div  className="">
-                        
+                        <SpikeOffers/>
                         </div>
                     </div>
+                </div>
                 </div>
                 </div>
                 <div className="section-C">
