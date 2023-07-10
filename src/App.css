@@ -1,0 +1,33 @@
+.navbar-wrapper{
+    padding: 15px 200px;
+    position: sticky;
+  }
+  .navbar{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  .nav-list li{
+    display: inline-block;
+    margin-right: 28px;
+    font-weight: bold;
+    color: grey;
+  
+  }
+  .sign-in-btn{
+    height: 50px;
+    width: 180px;
+    border-color: #ff8905!important;
+    background-color: #ff8905 !important;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+  
+  }
+  .sign-in-btn:hover{
+    border-color: #272624!important;
+    background-color: #141413 !important;
+  
+  }

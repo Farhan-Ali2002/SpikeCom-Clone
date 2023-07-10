@@ -1,3 +1,5 @@
+
+
 .home{
     padding-top: 80px;
     padding-bottom: 80px;
@@ -152,40 +154,127 @@ margin-top: 16px;
     padding-top: 120px;
     padding-bottom: 120px;
   }
-.flex-inner-B{
+  .flex-B{
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .spike-offers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    /* width: 1%; */
+  }
+  .card-b-container{
+    width: 30%;
+    margin: 14px;
+  }
+  .card-b-container img{
+    height: 40px;
+    width: 40px;
+  }
+
+
+  
+
+
+
+
+.before-section-c{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.stats{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    /* border: 1px solid black; */
+    
+}
+/* .bef-sec-c-top-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+} */
+
+.sec-b-top-section{
+    text-align: center;
+    width: 460px;
+}
+.bef-sec-c-top-sec .text1{
+    font-size: 18px;
+}
+.bef-sec-c-top-sec .text2{
+    font-size: 35px;
+}
+.bef-c-img{
+    /* display: flex;
+    justify-content: center; */
+
+}
+.bef-c-img img{
+    height: 30px;
+    width: 30px;
+}
+.bef-c-div{
+    display: flex;
+    width: 250px;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    
-    box-sizing: border-box;
-    width: 600px;
 }
-.container-B-offer{
-    font-size: 34px;
+
+.bef-c-div h2{
+    font-size: 64px;
+
 }
-.flex-B{
-    display: flex;
-    justify-content: center;
-    /* height: 200px; */
-    
+.bef-c-div h5{
+    font-size: 18px;
 }
-.card-b-container{
-    height: 300px;
-    width: 500px;
+
+.section-C{
+    margin-top: 80px;
+}
+
+/* to be removed */
+.c-sliding-images{
     border: 1px solid black;
+    height: 200px;
 }
-.spike-offers{
-    height: 600px;
+
+.c-bottom-section{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.sec-c-inner-card{
+    max-width: 40%;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
-.B-icon{
-    height: 40px;
-    width: 40px;
+
+.sec-c-inner-card{
+    
     display: flex;
-    flex-direction: start;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 6px #888888;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.sec-c-outer-card{
+    box-shadow: 2px 2px 6px #888888;
+    margin: 10px;
+   
+    
+}
+.c-bottom-inner-sec1{
+    background-color: #ff8905;
 }
