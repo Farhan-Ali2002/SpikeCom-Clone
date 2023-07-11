@@ -1,18 +1,19 @@
+import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 function Navbar() {
     return (
-<div className="navbar" >
+<div className="nav-list" >
 
-<ul className="nav-list">
    
-    <li>HOME</li>
-    <li>SOLUTIONS</li>
-    <li>OUR NETWORK</li>
-    <li>DISCOVER</li>
-    <li>FAQ</li>
-    <li>DOCUMENTATION</li>
+    <HashLink className='nav-child' smooth to="/#section-A">HOME</HashLink>
+    <HashLink className='nav-child'  smooth to="/#section-B">SOLUTIONS</HashLink>
+    <HashLink className='nav-child'  smooth to="/#section-C">OUR NETWORK</HashLink>
+    <HashLink className='nav-child' smooth to="/#section-D">DISCOVER</HashLink>
+    <HashLink className='nav-child' smooth to="/#section-E">FAQ</HashLink>
+    <HashLink className='nav-child' >DOCUMENTATION</HashLink>
+  
 
 
-</ul>
 
 </div>
     );

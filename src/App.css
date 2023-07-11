@@ -4,16 +4,18 @@
   }
   .navbar{
     display: flex;
-    
+    /* position: fixed; */
     align-items: center;
     justify-content: space-between;
   
   }
-  .nav-list li{
+  .nav-list .nav-child{
+    all: unset;
     display: inline-block;
     margin-right: 28px;
     font-weight: bold;
     color: grey;
+    cursor: pointer;
   
   }
   .sign-in-btn{

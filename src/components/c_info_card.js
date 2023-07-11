@@ -9,50 +9,50 @@ function CInfoCard(props) {
             <div className="c-publisher-logo d-flex justify-center">
                 <img className="h-2 w-2"src={props.logo}></img>
             </div>
-            <p className="mt-3 fs-18 text-light">{props.desc}</p>
+            <p className="mt-3 fs-18 text-light ">{props.desc}</p>
 
 
         </div>
         <div className="c-bottom-inner-sec2 mt-4">
-        <div className="d-flex flex-wrap justify-center">
-            <div className="sec-c-inner-card m-3">
+        <div className="d-flex flex-wrap justify-between">
+            <div className="sec-c-inner-card mb-3">
                 <div className="sec-inner-card-img">
                     <img src={icon12}></img>
 
 
                 </div>
-                <h4>{props.num1}</h4>
+                <p className="fs-30">{props.num1}</p>
                 <p className="">Monthly Impressions</p>
 
             </div>
            
-            <div className="sec-c-inner-card m-3 ">
+            <div className="sec-c-inner-card mb-3" >
                 <div className="sec-inner-card-img">
                     <img src={icon12}></img>
 
 
                 </div>
-                <h4>{props.num2}</h4>
+                <p className="fs-30">{props.num2}</p>
                 <p className="">Average Sessions</p>
 
             </div>
-            <div className="sec-c-inner-card m-3">
+            <div className="sec-c-inner-card">
                 <div className="sec-inner-card-img">
                     <img src={icon12}></img>
 
 
                 </div>
-                <h4>{props.num3}</h4>
+                <p className="fs-30">{props.num3}</p>
                 <p className="">Monthly Users</p>
 
             </div>
-            <div className="sec-c-inner-card m-3">
+            <div className="sec-c-inner-card ">
                 <div className="sec-inner-card-img">
                     <img src={icon12}></img>
 
 
                 </div>
-                <h4>{props.num4}</h4>
+                <p className="fs-30">{props.num4}</p>
                 <p className="">App Downloads</p>
 
             </div>

@@ -7,12 +7,13 @@ import SpikeOffers from "../../components/spikeoffergrid";
 import StatsGrid from "../../components/statsGrid";
 import quickmarketlogo from '../../images/logo-quick-market.png'
 import icon12 from '../../images/icon-12.png'
+import Carousel from "../../components/c_info_card_list";
 function Home(params) {
 
      return (
         <div className="home">
             
-                <div className="section-A">
+                <div className="section-A" id="section-A">
 
                 <div className="container-A">
                     <div className="row">
@@ -66,7 +67,7 @@ function Home(params) {
                 
                 </div>
                 <div className="image-sliding-div"></div>
-                <div className="section-B">
+                <div className="section-B" id="section-B">
 
                 <div className="container-B">
                     <div className="flex-B">
@@ -92,9 +93,9 @@ function Home(params) {
 
                    
                 </div>
-                <div className="section-C bg-light">
+                <div className="section-C bg-light" id="section-C">
 
-                    <div className="container-C">
+                    <div className="container-C wrapper">
                         <div className="c-top-section">
                             <div className="d-flex justify-center">
                                 <div className="text-center">
@@ -117,104 +118,54 @@ function Home(params) {
 
                             
                         </div>
-                        <div className="c-bottom-section d-flex ">
-                            <div className="sec-c-outer-card">
-                                <div className="c-bottom-inner-sec1 p-12">
-                                    <div className="c-publisher-logo d-flex justify-center">
-                                        <img className="h-2 w-2"src={quickmarketlogo}></img>
-                                    </div>
-                                    <p className="mt-3 fs-18 text-light">Quick Market helps create an amazing on-demand grocery experience. One of the world's largest and fastest growing online food delivery and quick commerce platform</p>
-
-
-                                </div>
-                                <div className="c-bottom-inner-sec2 mt-4">
-                                <div className="d-flex flex-wrap justify-center">
-                                    <div className="sec-c-inner-card m-3">
-                                        <div className="sec-inner-card-img">
-                                            <img src={icon12}></img>
-
-
-                                        </div>
-                                        <h4>+2.5M</h4>
-                                        <p className="">Monthly Impressions</p>
-
-                                    </div>
-                                   
-                                    <div className="sec-c-inner-card m-3 ">
-                                        <div className="sec-inner-card-img">
-                                            <img src={icon12}></img>
-
-
-                                        </div>
-                                        <h4>+2.5M</h4>
-                                        <p className="">Average Sessions</p>
-
-                                    </div>
-                                    <div className="sec-c-inner-card m-3">
-                                        <div className="sec-inner-card-img">
-                                            <img src={icon12}></img>
-
-
-                                        </div>
-                                        <h4>+2.5M</h4>
-                                        <p className="">Monthly Users</p>
-
-                                    </div>
-                                    <div className="sec-c-inner-card m-3">
-                                        <div className="sec-inner-card-img">
-                                            <img src={icon12}></img>
-
-
-                                        </div>
-                                        <h4>+2.5M</h4>
-                                        <p className="">App Downloads</p>
-
-                                    </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                        {/* <div className="c-bottom-section d-flex "> */}
+                            <Carousel/>
                             
                             
 
 
-                        </div>
+                        {/* </div> */}
                     </div>
                 </div>
                
 
-            <div className="section-D">
+            <div className="section-D" id="section-D">
 
-                <div className="container-D">
-                    <div className="row">
-                        <div  className="screen-img-container">
-                          <img src={screen}  alt="screen"></img>
-                          </div>
-                          <div className="description">
-                            <p>jdghjddjddjgdjhgd</p>
-                            <h3></h3>
-                            <p>kdghjgdh</p>
-                            <p>hjdhvhghdgchghjhdgjgdjhgd<br/>hgdhgdhgdhgd</p>
-                            <p>Sign In Now</p>
+                <div className="container-D wrapper d-flex justify-center">
+                    <div className="D-section-left w-70 d-flex justify-end">
+                        <div  className="D-screen-img-container">
+                          <img src={screen} height="380px" alt="screen"></img>
                           </div>
                     </div>
+                    <div className="D-section-right w-40">
+                          <div className="D-wrapper w-50">
+                            <p className="fs-18">Let your profit grows & enjoy</p>
+                            <h3 className="fs-38">Start using <br></br><span className="orange">SpikeCom</span></h3>
+                            <p className="fs-18">We bring together everything you need to manage, serve and track your ads on any platform. SpikeCom's products power ad serving for web sites, apps, marketplaces, retailers, email newsletters and everything in between.
+
+</p>
+                     
+                            <p className="fs-22 orange">Sign In Now</p>
+                            </div>
+                          </div>
+                   
+                    
                 </div>
             </div>
-            <div className="section-E">
+            <div className="section-E" id="section-E">
 
-<div className="container-E">
-    <div className="row">
+<div className="container-E wrapper d-flex justify-center">
+    <div className="E-top-section">
       
-        <div className="description">
-            <p>jdghjddjddjgdjhgd</p>
-            <h3></h3>
-            <p>kdghjgdh</p>
-            <p>hjdhvhghdgchghjhdgjgdjhgd<br/>hgdhgdhgdhgd</p>
-            <p>Sign In Now</p>
+        <div className="text-center">
+            <p className="fs-20">Quickly find the help you need</p>
+            <p className="fs-32 text-center"> <span className="orange">Our Frequently Ask Question</span>   <br/>support center</p>
+            <p className="fs-20">We'd love to hear from you. Let us know if we can help you with anything</p>
         </div>
-        <div  className="">
         
-        </div>
+    </div>
+    <div className="E-bottom-section"> 
+    
     </div>
 </div>
 </div>
