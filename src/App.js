@@ -3,23 +3,22 @@ import logo from './images/logo-dark.png'
 import './App.css';
 import React from 'react';
 import Home from './screens/home'
+import allRoutes from './routes/routes';
+import Documentation from './screens/documentation';
+import {BrowserRouter as Router, Routes, Route,Navigate} from "react-router-dom";
+// import { Router } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="navbar-wrapper">
-        <nav className="navbar">
-        
-        <img className = "logo" height="40px"  src={logo}></img>
+     <Routes>
+            <Route path="/" element={<Home/>}></Route>
+            <Route path="/documentation" element={<Documentation/>}></Route>
+        </Routes>
       
-        <Navbar/>
 
-        <button className="sign-in-btn">SIGN-IN NOW</button>
-        </nav>
-        </div>
-      </header>
-
-      <Home></Home>
+      {/* <Home></Home> */}
+      
+      {/* <allRoutes/> */}
     </div>
   );
 }

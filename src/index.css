@@ -1027,10 +1027,12 @@ select option {
   cursor: pointer;
 }
 body .wrapper{
-  max-width: 1620px;
+  max-width: 1140px;
   padding: 0px 25px;
   margin: 0 auto;
 }
+
+
 body .carousal-wrapper{
   margin: 0 0 0 auto;
   padding: 0px 0px 0px 50px;
@@ -1132,6 +1134,7 @@ body .carousal-wrapper{
   position: relative;
   display: inline-block;
   margin: 15px 0px 20px!important;
+  
 }
 
 .has-arrow-start::before{

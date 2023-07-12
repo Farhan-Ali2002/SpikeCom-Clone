@@ -8,11 +8,51 @@ import StatsGrid from "../../components/statsGrid";
 import quickmarketlogo from '../../images/logo-quick-market.png'
 import icon12 from '../../images/icon-12.png'
 import Carousel from "../../components/c_info_card_list";
+import { useState } from "react";
+import questionsImage from "../../images/Questions.png"
+import Navbar from "../../components/navbar";
+import logo from '../../images/logo-dark.png'
 function Home(params) {
+    const [expanded1, setExpanded1] = useState(false);
+    const [expanded2, setExpanded2] = useState(false);
+    const [expanded3, setExpanded3] = useState(false);
+    const [expanded4, setExpanded4] = useState(false);
+    const toggleContainer = (i) => {
+        if (i===1) {
+            setExpanded1(!expanded1);
+        }
+        else if (i===2) {
+            setExpanded2(!expanded2)
+            
+        }
+        else if (i===3) {
+            setExpanded3(!expanded3)
+            
+        }
+        else if (i===4) {
+            setExpanded4(!expanded4)
+            
+        }
+        
+      };
 
      return (
-        <div className="home">
-            
+        <div>
+
+<header className="App-header">
+        <div className="navbar-wrapper">
+        <nav className="navbar">
+        
+        <img className = "logo" height="40px"  src={logo}></img>
+      
+        <Navbar/>
+
+        <button className="sign-in-btn">SIGN-IN NOW</button>
+        </nav>
+        </div>
+      </header>    
+          <div className="home">
+                
                 <div className="section-A" id="section-A">
 
                 <div className="container-A">
@@ -138,7 +178,7 @@ function Home(params) {
                           </div>
                     </div>
                     <div className="D-section-right w-40">
-                          <div className="D-wrapper w-50">
+                          <div className=" w-50">
                             <p className="fs-18">Let your profit grows & enjoy</p>
                             <h3 className="fs-38">Start using <br></br><span className="orange">SpikeCom</span></h3>
                             <p className="fs-18">We bring together everything you need to manage, serve and track your ads on any platform. SpikeCom's products power ad serving for web sites, apps, marketplaces, retailers, email newsletters and everything in between.
@@ -154,8 +194,8 @@ function Home(params) {
             </div>
             <div className="section-E" id="section-E">
 
-<div className="container-E wrapper d-flex justify-center">
-    <div className="E-top-section">
+<div className="container-E wrapper">
+    <div className="E-top-section d-flex justify-center">
       
         <div className="text-center">
             <p className="fs-20">Quickly find the help you need</p>
@@ -164,11 +204,74 @@ function Home(params) {
         </div>
         
     </div>
-    <div className="E-bottom-section"> 
-    
+    <div className="E-bottom-section d-flex justify-center align-center"> 
+    <div className="E-bottom-left-section w-50 pt-4">
+    <button className="ques-expand-btn">{expanded4 ? '-' : '+'}</button>
+          <div className="questions">
+            <div className="question " onClick={()=>toggleContainer(1)}>
+            <div className="q-title ml-3">
+                <h5 className="">Question 01 Random Text</h5>
+                </div>
+                {expanded1 && (
+                <div className="content">
+                 {/* Content to display */}
+          <p>Vulputate lobortis tincidunt porttitor massa morbi suscipit mollis luctus ullamcorper phasellus ante finibus facilisis .</p>
+        </div>
+      )}
+
+
+            </div>
+            <button className="ques-expand-btn">{expanded4 ? '-' : '+'}</button>
+            <div className="question " onClick={()=>toggleContainer(2)}>
+                <div className="q-title">
+                <p className="fs-24 ">Question 02 Random Text</p>
+                </div>
+                {expanded2 && (
+                <div className="content">
+                 {/* Content to display */}
+          <p>Quisque tincidunt the malesuada aliquet ullamcorper Suspendisse lectus congue iaculis vitae purus Nullam.</p>
+        </div>
+      )}
+
+
+            </div>
+            <button className="ques-expand-btn">{expanded4 ? '-' : '+'}</button>
+            <div className="question" onClick={()=>toggleContainer(3)}>
+                <div className="q-title">
+                <p className="fs-24">Question 03 Random Text</p>
+                </div>
+                {expanded3 && (
+                <div className="content">
+                 {/* Content to display */}
+          <p>Pellentesque tincidunt imperdiet metus interdum ligula tristique aenean facilisis congue congue libero interdum venenatis scelerisque sed massa elit pulvinar gravida.</p>
+        </div>
+      )}
+
+
+            </div>
+            <button className="ques-expand-btn">{expanded4 ? '-' : '+'}</button>
+            <div className="question" onClick={()=>toggleContainer(4)}>
+            <div className="q-title">
+                <p className="fs-24">Question 04 Random Text</p>
+                </div>
+                {expanded4 && (
+                <div className="content">
+                 {/* Content to display */}
+          <p>Vestibulum sodales turpis vestibulum praesent consectetur magna tortor interdum neque.</p>
+        </div>
+      )}
+
+
+            </div>
+          </div>
+          </div>
+          <div className="E-bottom-right-section w-50 d-flex justify-center">
+            <img width="50%" src={questionsImage}></img>
+          </div>
     </div>
 </div>
 </div>
+        </div>
         </div>
     )
     

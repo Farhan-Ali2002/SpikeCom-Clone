@@ -1,0 +1,29 @@
+#docSearch{
+    width: 90%;
+    height: 100%;
+    border-radius: 100px;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+
+    
+}
+.autocomplete{
+    width: 700px;
+    height: 75px;
+    border-radius: 200px;
+    
+}
+.search-banner{
+    background-color: #ff8905;
+    color: white;
+}
+.doc-header{
+
+    background-color: #ff8905;
+  
+  }
+
+  doc-top-section{
+    background-image: url("../../images/doc-bg.png");
+  }
