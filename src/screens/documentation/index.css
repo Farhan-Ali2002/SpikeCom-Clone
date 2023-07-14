@@ -27,3 +27,66 @@
   doc-top-section{
     background-image: url("../../images/doc-bg.png");
   }
+
+  #doc-items{
+    margin-top: 100px;
+    width: 100%;
+
+  }
+
+  .doc-card{
+    border: 1px solid black;
+    padding: 30px;
+    margin-bottom: 40px;
+    max-width: 31%;
+    width: 100%;
+    cursor: pointer;
+
+  }
+  .doc-card .doc-head h4 {
+    color: #f77b37;
+    font-size: 22px;
+    font-weight: 100;
+    margin: 30px 0 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.doc-card .doc-body p {
+    color: #000;
+    font-size: 16px;
+    margin: 30px 0 0;
+    transition: all 0.3s ease-in-out;
+}
+.doc-card:hover {
+    box-shadow: 0px 0px 10px 10px #f9f9f9;
+    border: 1px solid #f77b37;
+    background-color: #f77b37;
+    transition: all 0.3s ease-in-out;
+    color:white
+    
+}
+.doc-card:hover .doc-head .doc-icon {
+    color: #f77b37;
+    
+ 
+    background: #fff0e7;
+    transition: all 0.3s ease-in-out;
+    
+}
+.doc-card .doc-head .doc-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background: #e4bfa9;
+    border-radius: 50%;
+
+}
+
+
+
+.doc-card:hover .doc-head h4, .doc-card:hover .doc-body p {
+    color: #faf7f5;
+   
+}

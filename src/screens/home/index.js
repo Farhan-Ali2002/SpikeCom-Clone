@@ -56,7 +56,7 @@ function Home(params) {
                 <div className="section-A" id="section-A">
 
                 <div className="container-A">
-                    <div className="row">
+                    <div className="wrapper d-flex justify-between">
                       
                         <div className="section-A-left">
                             <h1 className="A-heading">
@@ -95,7 +95,7 @@ function Home(params) {
                     
                 </div>
                 <div className="orange-container">
-                    <div className="orange-inner-container">
+                    <div className="wrapper d-flex justify-center align-items-center h-100">
                         <div className="orange-container-desc">
                     <p>Everyone's Using SpikeCom. We would love to have you in our list. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores deleniti omnis animi, quo perspiciatis dolore veniam laborum repudiandae ipsum quae voluptatum ducimus, sunt saepe.</p>
                     </div>
@@ -109,7 +109,7 @@ function Home(params) {
                 <div className="image-sliding-div"></div>
                 <div className="section-B" id="section-B">
 
-                <div className="container-B">
+                <div className="wrapper">
                     <div className="flex-B">
                    
                             <div className="sec-b-top-section">

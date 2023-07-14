@@ -1,13 +1,11 @@
-import React from 'react'
-import './index.css'
-import '../../index.css'
-import DocCardsList from '../../components/docCardsList' 
-import logo from '../../images/logo-dark.png'
-import DocCard from '../../components/doc_card'
-function Documentation(params) {
+import React from "react";
+import logo from "../../../images/logo-dark.png"
+import "../../../index.css"
+import "../index.css"
+function Introduction(params) {
     return (
-    <div className='documentation'>
-        <section className='doc-top-section'>
+    <div>
+    <section className='doc-top-section'>
         <header className="doc-header">
         <div className="navbar-wrapper">
         <nav className="navbar">
@@ -40,14 +38,7 @@ function Documentation(params) {
             </div>
         </div>
         </section>
-        
-        <section id='doc-items'>
-            <div className='doc-wrapper d-flex flex-wrap justify-between'>
-               <DocCardsList/>
-            </div>
-        </section>
-        
-    </div>)
-    
-}
-export default Documentation
+    <div/>
+    </div>
+    )}
+export default Introduction

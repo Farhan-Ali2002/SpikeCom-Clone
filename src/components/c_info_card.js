@@ -7,7 +7,7 @@ function CInfoCard(props) {
         <div className="sec-c-outer-card">
         <div className="c-bottom-inner-sec1 p-12">
             <div className="c-publisher-logo d-flex justify-center">
-                <img className="h-2 w-2"src={props.logo}></img>
+                <img className=""src={props.logo}></img>
             </div>
             <p className="mt-3 fs-18 text-light ">{props.desc}</p>
 

@@ -1032,6 +1032,13 @@ body .wrapper{
   margin: 0 auto;
 }
 
+.doc-wrapper{
+  max-width: 1680px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 0 auto;
+}
+
 
 body .carousal-wrapper{
   margin: 0 0 0 auto;
