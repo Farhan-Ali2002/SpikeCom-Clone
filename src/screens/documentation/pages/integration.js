@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../../images/logo-dark.png"
 import "../../../index.css"
 import "../index.css"
+import { NavLink } from "react-router-dom";
 function Integrations(params) {
     return (
         <div>
@@ -37,6 +38,79 @@ function Integrations(params) {
     
                 </div>
             </div>
+            </section>
+            <section className="doc-contents">
+                <div className="doc-wrapper ">
+                    <div className="content-header d-flex justify-between">
+                        <p className="updated">
+                            <span>Created : Feb, 04, 2016</span> | 
+                            <span>Last Updated: April, 15, 2016</span>
+                        </p>
+                        <div className="breadcrum">
+                            <NavLink to="../">SpikeCom Documentation</NavLink>
+                            {"=>"}
+                            <NavLink to="">Introduction</NavLink>
+                        </div>
+                    </div>
+                </div>
+                <div className="doc-wrapper d-flex">
+                    <div className="doc-sidebar w-30">
+                        <h2>Quick Navigation</h2>
+                        <ul>
+                        <li>
+                            <NavLink to="/docs/introduction">Introduction</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/roles-and-settings">Role Settings</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/brands-information-and-configuration">Brands information and Configuration</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/target-data-keys">Target Data keys</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/settings-and-configuration">Settings and Configurations</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/placement-settings-and-configuration">Placement Settings and Configurations</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/target-segments">Target Segments</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/compaign-management">Compaign Management</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/account-settings">Account Settings</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/product-information-and-configuration">Product information and Configuration</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/target-groups">Target Groups</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/advertiser-settings-and-configuration">Advertiser Settings and Configuration</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/integration">Integrations</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/docs/adserving-and-refresh-logic">Ads Serving and Refresh Logic</NavLink>
+                        </li>
+                        {/* <li>
+                            <NavLink>Introduction</NavLink>
+                        </li> */}
+    
+                    </ul>
+                    </div>
+                    
+                    
+    
+    
+                </div>
+    
             </section>
         <div/>
         </div>

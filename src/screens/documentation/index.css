@@ -90,3 +90,19 @@
     color: #faf7f5;
    
 }
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+.doc-sidebar ul li{
+    margin-bottom: 20px;
+    color: #f77b37;
+    margin-left: 0;
+    padding: 0;
+    
+}
+.doc-sidebar h2{
+    margin-left: 20px;
+    
+}

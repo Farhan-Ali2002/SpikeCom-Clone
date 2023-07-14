@@ -25,13 +25,28 @@ body.RTL {
 .LTR{
   direction: ltr;
 }
+.hidden{
+
+  display: none;
+}
 body {
- background-image: url("./images/index-7.png");
+
   scrollbar-width: thin;
   scrollbar-color: var(--primary) #ddd;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.btn {
+  padding: 12px 30px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.5s;
+  border: 1px solid #ff8905;
+  overflow: hidden;
+  position: relative;
 }
 
 body::-webkit-scrollbar {
@@ -53,7 +68,7 @@ body::-webkit-scrollbar-thumb {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 .RTL * {
   font-family: "Alexandria";
@@ -908,7 +923,7 @@ select option {
   margin: 0px;
 }
 
-.btn {
+/* .btn {
   font-size: 14px;
   padding: 0px 50px;
   border-radius: 5px;
@@ -923,7 +938,7 @@ select option {
   height: 45px;
   border: 0;
   cursor: pointer;
-}
+} */
 
 .btn.btn-primary {
   background-color: var(--primary);

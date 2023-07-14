@@ -12,11 +12,13 @@ import { useState } from "react";
 import questionsImage from "../../images/Questions.png"
 import Navbar from "../../components/navbar";
 import logo from '../../images/logo-dark.png'
+import Hamburger from 'hamburger-react'
 function Home(params) {
     const [expanded1, setExpanded1] = useState(false);
     const [expanded2, setExpanded2] = useState(false);
     const [expanded3, setExpanded3] = useState(false);
     const [expanded4, setExpanded4] = useState(false);
+    const [isOpen, setOpen] = useState(false)
     const toggleContainer = (i) => {
         if (i===1) {
             setExpanded1(!expanded1);
@@ -45,9 +47,13 @@ function Home(params) {
         
         <img className = "logo" height="40px"  src={logo}></img>
       
+        
         <Navbar/>
-
         <button className="sign-in-btn">SIGN-IN NOW</button>
+       
+       <span className="hamburger-button">
+        <Hamburger  toggled={isOpen} toggle={setOpen} />
+        </span>
         </nav>
         </div>
       </header>    
