@@ -1,7 +1,14 @@
 .navbar-wrapper{
-    padding: 15px 200px;
-    
+    padding: 15px 150px;
   }
+
+  @media screen and (max-width: 1600px) {
+    .navbar-wrapper {
+      padding: 15px 0;
+    }
+  }
+
+
   .navbar{
     display: flex;
     /* position: fixed; */
