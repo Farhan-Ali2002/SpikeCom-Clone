@@ -109,8 +109,11 @@ h6 {
 
 .section-A {
   position: relative;
-  background-image: url("../../images/index-7.png");
+
   width: 100%;
+}
+.header-and-A {
+  background-image: url("../../images/index-7.png");
 }
 
 .section-A-left {

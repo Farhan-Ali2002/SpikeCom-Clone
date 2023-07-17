@@ -53,9 +53,11 @@ function Home(params) {
 
   return (
     <div>
-      <Header />
-      <div className="home">
+      <div className="">
+        <div className="header-and-A">
+        <Header />
         <SectionA />
+        </div>
         <div className="wrapper mt-4">
          <div className="">
           <Slider {...settings}>
