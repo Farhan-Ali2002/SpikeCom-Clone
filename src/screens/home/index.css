@@ -1,3 +1,10 @@
+.slider {
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
 .home {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -26,6 +33,21 @@
   .spike-offers .card-b-container {
     width: 100%;
     text-align: center;
+  }
+
+  .container-D {
+    flex-direction: column;
+  }
+  .D-section-left {
+    max-width: 100%;
+  }
+  .D-screen-img-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .D-section-right {
+    margin-top: 40px;
   }
 }
 
@@ -68,8 +90,8 @@ h6 {
 }
 .card-div-A-right {
   background-color: white;
-  height: 620px;
-  width: 450px;
+
+  width: 70%;
   /* position: absolute; */
   position: relative;
   top: 40px;
@@ -115,6 +137,13 @@ h6 {
 
   .section-A-right {
     width: 100%;
+  }
+  .card-div-A-right {
+    width: 60%;
+  }
+  .E-bottom-section {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -180,10 +209,11 @@ h6 {
   border-color: #272624 !important;
   background-color: #141413 !important;
 }
-.image-sliding-div {
-  width: 100%;
-  height: 200px;
+.image-slider {
   background-color: rgb(216, 203, 203);
+}
+.slide-image {
+  width: 15%;
 }
 .section-B {
   padding-top: 120px;
@@ -254,6 +284,8 @@ h6 {
 }
 .bef-c-div {
   display: flex;
+  margin-top: 100px;
+
   /* width: 250px; */
   width: 25%;
   min-width: 250px;
@@ -265,6 +297,7 @@ h6 {
 
 .bef-c-div h2 {
   font-size: 64px;
+  margin: 4px;
 }
 .bef-c-div h5 {
   font-size: 18px;
@@ -335,7 +368,7 @@ h6 {
 .sec-inner-card-img,
 .sec-c-inner-card h4 {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 .sec-c-outer-card {
   margin: 10px;
@@ -348,21 +381,39 @@ h6 {
 }
 .c-bottom-inner-sec1 {
   background-color: #ff8905;
-  height: 50%;
+  height: 320px;
+  border-radius: 0.4rem;
 }
 
 .c-bottom-inner-sec1 p {
-  height: 70px;
+  line-height: 1.3;
+  text-align: left;
 }
 .section-D {
   margin-top: 200px;
   /* padding-left: 150px;
     padding-right: 150px; */
 }
-.D-wrapper {
+.D-section-left {
+}
+/* .D-wrapper {
   margin-left: 100px;
   padding: 10px;
+} */
+.D-section-right > div {
+  /* margin: 0 auto; */
+  float: right;
 }
+
+.D-section-right > div p {
+  line-height: 25px;
+}
+
+/* .D-section-right > div h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 1.3;
+} */
 
 .section-E {
   margin-top: 80px;
@@ -371,11 +422,15 @@ h6 {
 }
 
 .question {
-  border: 1px solid rgb(145, 139, 139);
+  border: 1px solid #f5f7fa;
   cursor: pointer;
   margin-bottom: 10px;
   border-radius: 10px;
   box-sizing: border-box;
+  transition: top 0.45s cubic-bezier(0.44, 0.99, 0.48, 1);
+}
+.q-title h5 {
+  font-weight: 500;
 }
 .content {
   padding: 20px;
@@ -405,5 +460,9 @@ h5 {
   background-color: #ff8905;
   color: #d8d2d2;
   border-radius: 50%;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

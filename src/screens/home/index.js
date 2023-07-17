@@ -1,24 +1,35 @@
 import React from "react";
 import "./index.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import screen from "../../images/laptop.png";
+import sadia from "../../images/sadia.png"
+import sadafko from "../../images/sadafko.png"
+import safi from "../../images/safi.png"
 // import cardImage from "../../images/card-image.png"
 // import CardBContainer from "../../components/CardContainer";
+//import quickmarketlogo from "../../images/logo-quick-market.png";
+// import icon12 from "../../images/icon-12.png";
 import SpikeOffers from "../../components/spikeoffergrid";
 import StatsGrid from "../../components/statsGrid";
-import quickmarketlogo from "../../images/logo-quick-market.png";
-import icon12 from "../../images/icon-12.png";
 import Carousel from "../../components/c_info_card_list";
 import { useState } from "react";
 import questionsImage from "../../images/Questions.png";
-import Navbar from "../../components/navbar";
-import logo from "../../images/logo-dark.png";
-import Hamburger from "hamburger-react";
+
+import SectionA from "../sections/sectionA";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+
+
+
 function Home(params) {
   const [expanded1, setExpanded1] = useState(false);
   const [expanded2, setExpanded2] = useState(false);
   const [expanded3, setExpanded3] = useState(false);
   const [expanded4, setExpanded4] = useState(false);
   const [isOpen, setOpen] = useState(false);
+
   const toggleContainer = (i) => {
     if (i === 1) {
       setExpanded1(!expanded1);
@@ -30,102 +41,65 @@ function Home(params) {
       setExpanded4(!expanded4);
     }
   };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+      autoplaySpeed: 2000
+  };
 
   return (
     <div>
-      <header className="App-header">
-        <div className="navbar-wrapper">
-          <nav className="navbar">
-            <img className="logo" height="40px" src={logo}></img>
-
-            <Navbar />
-            <button className="sign-in-btn">SIGN-IN NOW</button>
-
-            <span className="hamburger-button">
-              <Hamburger toggled={isOpen} toggle={setOpen} />
-            </span>
-          </nav>
-        </div>
-      </header>
+      <Header />
       <div className="home">
-        <div className="section-A" id="section-A">
-          <div className="container-A wrapper d-flex justify-between">
-            <div className="wrapper d-flex justify-between">
-              <div className="section-A-left">
-                <h1 className="A-heading">
-                  <span className="orange">SpikeCom </span>
-                  In-App Media Ecosystem
-                </h1>
-                <p>
-                  At a moment of truth, SpikeCom connects Advertisers and
-                  Publishers to Spike their communication with the right target
-                  audience
-                </p>
-
-                <button className="sign-in-btn mt-16">Start Trial</button>
-              </div>
-              <div className="section-A-right">
-                <div className="inner-container-A">
-                  <div className="card-div-A-right">
-                    <div className="inner-card-heading-right-A">
-                      <h2>
-                        <span className="orange">Spike</span>
-                        Com
-                      </h2>
-                    </div>
-                    <div>
-                      <p className="inner-card-para-right-A">
-                        Connecting publishers and advertisers under a single
-                        platform
-                      </p>
-                    </div>
-                    {/* 
-                            <img className="card-img-A" src={cardImage}>
-
-                            </img> */}
-                  </div>
-                </div>
-              </div>
-            </div>
+        <SectionA />
+        <div className="wrapper mt-4">
+         <div className="">
+          <Slider {...settings}>
+         
+          <div className="slide-image">
+            <img src={sadia}></img>
           </div>
-          {/* <div className="orange-container">
-                    <div className="wrapper d-flex justify-center align-items-center h-100">
-                        <div className="orange-container-desc">
-                    <p>Everyone's Using SpikeCom. We would love to have you in our list. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores deleniti omnis animi, quo perspiciatis dolore veniam laborum repudiandae ipsum quae voluptatum ducimus, sunt saepe.</p>
-                    </div>
-                    <div className="orange-container-btn-div">
-                        <button className=" orange-container-btn ">READ MORE</button>
-                    </div>
-                    </div>
-                </div> */}
-          <div class="bg-primary py-5">
-            <div class="my-4">
-              <div class="container ">
-                <div class="wrapper d-flex align-items-center justify-content-start">
-                  <div class="col-lg-7">
-                    <div class="text-start">
-                      <p class="text-light">
-                        Everyone's Using SpikeCom. We would love to have you in
-                        our list. Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Dolores deleniti omnis animi, quo
-                        perspiciatis dolore veniam laborum repudiandae ipsum
-                        quae voluptatum ducimus, sunt saepe.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 ">
-                    <div class="text-lg-end text-start orange-container-btn-div">
-                      <button class="btn orange-container-btn">
-                        Read More
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="slide-image">
+            <img src={sadafko}></img>
           </div>
+          <div className="slide-image">
+            <img src={safi}></img>
+          </div>
+          <div className="slide-image">
+            <img src={sadafko}></img>
+          </div>
+          <div className="slide-image">
+            <img src={safi}></img>
+          </div>
+          <div className="slide-image">
+            <img src={sadafko}></img>
+          </div>
+          <div className="slide-image">
+            <img src={sadia}></img>
+          </div>
+          <div className="slide-image">
+            <img src={safi}></img>
+          </div>
+          <div className="slide-image">
+            <img src={sadafko}></img>
+          </div>
+          <div className="slide-image">
+            <img src={safi}></img>
+          </div>
+          <div className="slide-image">
+            <img src={sadia}></img>
+          </div>
+          
+          </Slider>
+        
+          
         </div>
-        <div className="image-sliding-div"></div>
+        </div>
+       
         <div className="section-B" id="section-B">
           <div className="wrapper">
             <div className="flex-B">
@@ -183,26 +157,28 @@ function Home(params) {
 
         <div className="section-D" id="section-D">
           <div className="container-D wrapper d-flex justify-center">
-            <div className="D-section-left w-70 d-flex justify-end">
+            <div className="D-section-left d-flex justify-center">
               <div className="D-screen-img-container">
                 <img src={screen} height="380px" alt="screen"></img>
               </div>
             </div>
-            <div className="D-section-right w-40">
-              <div className=" w-50">
-                <p className="fs-18">Let your profit grows & enjoy</p>
-                <h3 className="fs-38">
+            <div className="D-section-right">
+              <div className=" w-80">
+                <h6 className="fs-18 m-0 mb-2 fw-normal">
+                  Let your profit <b>grows & enjoy</b>
+                </h6>
+                <h1 className="fs-38 mt-2">
                   Start using <br></br>
-                  <span className="orange">SpikeCom</span>
-                </h3>
-                <p className="fs-18">
+                  <span className="orange fw-normal">SpikeCom</span>
+                </h1>
+                <p className="fs-18 mt-3">
                   We bring together everything you need to manage, serve and
                   track your ads on any platform. SpikeCom's products power ad
                   serving for web sites, apps, marketplaces, retailers, email
                   newsletters and everything in between.
                 </p>
 
-                <p className="fs-22 orange">Sign In Now</p>
+                <p className="fs-22 orange">Sign In Now {"→"}</p>
               </div>
             </div>
           </div>
@@ -226,15 +202,15 @@ function Home(params) {
                 </p>
               </div>
             </div>
-            <div className="E-bottom-section d-flex justify-center align-center">
+            <div className="E-bottom-section d-flex justify-center ">
               <div className="E-bottom-left-section w-50 pt-4">
                 <button className="ques-expand-btn">
-                  {expanded4 ? "-" : "+"}
+                  {expanded1 ? "−" : "+"}
                 </button>
                 <div className="questions">
                   <div className="question " onClick={() => toggleContainer(1)}>
                     <div className="q-title ml-3">
-                      <h5 className="">Question 01 Random Text</h5>
+                      <h5>Question 01 Random Text</h5>
                     </div>
                     {expanded1 && (
                       <div className="content">
@@ -248,11 +224,11 @@ function Home(params) {
                     )}
                   </div>
                   <button className="ques-expand-btn">
-                    {expanded4 ? "-" : "+"}
+                    {expanded2 ? "−" : "+"}
                   </button>
                   <div className="question " onClick={() => toggleContainer(2)}>
                     <div className="q-title">
-                      <p className="fs-24 ">Question 02 Random Text</p>
+                      <h5>Question 02 Random Text</h5>
                     </div>
                     {expanded2 && (
                       <div className="content">
@@ -265,11 +241,11 @@ function Home(params) {
                     )}
                   </div>
                   <button className="ques-expand-btn">
-                    {expanded4 ? "-" : "+"}
+                    {expanded3 ? "−" : "+"}
                   </button>
                   <div className="question" onClick={() => toggleContainer(3)}>
                     <div className="q-title">
-                      <p className="fs-24">Question 03 Random Text</p>
+                      <h5>Question 03 Random Text</h5>
                     </div>
                     {expanded3 && (
                       <div className="content">
@@ -284,11 +260,11 @@ function Home(params) {
                     )}
                   </div>
                   <button className="ques-expand-btn">
-                    {expanded4 ? "-" : "+"}
+                    {expanded4 ? "−" : "+"}
                   </button>
                   <div className="question" onClick={() => toggleContainer(4)}>
                     <div className="q-title">
-                      <p className="fs-24">Question 04 Random Text</p>
+                      <h5>Question 04 Random Text</h5>
                     </div>
                     {expanded4 && (
                       <div className="content">
@@ -303,12 +279,16 @@ function Home(params) {
                 </div>
               </div>
               <div className="E-bottom-right-section w-50 d-flex justify-center">
-                <img width="50%" src={questionsImage}></img>
+                <div>
+                  <img width="100%" src={questionsImage}></img>
+                </div>
               </div>
+              
             </div>
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
