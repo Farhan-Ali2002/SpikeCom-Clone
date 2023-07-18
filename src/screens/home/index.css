@@ -1,3 +1,10 @@
+.on-scroll-header {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  background-color: #f5f7fa;
+}
 .slider {
   width: 400px;
   margin: 20px auto;
@@ -82,17 +89,22 @@ h6 {
 /* p{
     line-height: 25px
 } */
+
+.trial-btn {
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
 .inner-container-A {
   /* padding: 40px; */
   display: flex;
   justify-content: center;
   position: relative;
 }
-.card-div-A-right {
+.card-div-A-image {
   background-color: white;
-
   width: 70%;
-  /* position: absolute; */
   position: relative;
   top: 40px;
   min-height: 620px;
@@ -105,6 +117,28 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 3;
+}
+.toggleCard {
+  transform: rotateY(90deg);
+  transition: 0.8s;
+  transform-style: preserve-3d;
+}
+.toggleCardReverse {
+  transition: 0.8s;
+  transform-style: preserve-3d;
+}
+.card-div-A-content {
+  width: 70%;
+  background-color: white;
+  box-shadow: 2px 2px 6px #888888;
+  /* position: absolute; */
+  position: absolute;
+  top: 40px;
+  min-height: 620px;
+  min-width: 400px;
+  z-index: 3;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .section-A {
@@ -290,8 +324,8 @@ h6 {
   margin-top: 100px;
 
   /* width: 250px; */
-  width: 25%;
-  min-width: 250px;
+  width: 20%;
+  min-width: 200px;
   box-sizing: border-box;
   flex-direction: column;
   justify-content: center;

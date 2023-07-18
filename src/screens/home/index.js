@@ -7,6 +7,7 @@ import screen from "../../images/laptop.png";
 import sadia from "../../images/sadia.png"
 import sadafko from "../../images/sadafko.png"
 import safi from "../../images/safi.png"
+import SlidingImageList1 from "../../components/sliding_image_list1";
 // import cardImage from "../../images/card-image.png"
 // import CardBContainer from "../../components/CardContainer";
 //import quickmarketlogo from "../../images/logo-quick-market.png";
@@ -14,7 +15,7 @@ import safi from "../../images/safi.png"
 import SpikeOffers from "../../components/spikeoffergrid";
 import StatsGrid from "../../components/statsGrid";
 import Carousel from "../../components/c_info_card_list";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import questionsImage from "../../images/Questions.png";
 
 import SectionA from "../sections/sectionA";
@@ -28,7 +29,7 @@ function Home(params) {
   const [expanded2, setExpanded2] = useState(false);
   const [expanded3, setExpanded3] = useState(false);
   const [expanded4, setExpanded4] = useState(false);
-  const [isOpen, setOpen] = useState(false);
+ 
 
   const toggleContainer = (i) => {
     if (i === 1) {
@@ -41,15 +42,7 @@ function Home(params) {
       setExpanded4(!expanded4);
     }
   };
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-      autoplaySpeed: 2000
-  };
+
 
   return (
     <div>
@@ -60,43 +53,7 @@ function Home(params) {
         </div>
         <div className="wrapper mt-4">
          <div className="">
-          <Slider {...settings}>
-         
-          <div className="slide-image">
-            <img src={sadia}></img>
-          </div>
-          <div className="slide-image">
-            <img src={sadafko}></img>
-          </div>
-          <div className="slide-image">
-            <img src={safi}></img>
-          </div>
-          <div className="slide-image">
-            <img src={sadafko}></img>
-          </div>
-          <div className="slide-image">
-            <img src={safi}></img>
-          </div>
-          <div className="slide-image">
-            <img src={sadafko}></img>
-          </div>
-          <div className="slide-image">
-            <img src={sadia}></img>
-          </div>
-          <div className="slide-image">
-            <img src={safi}></img>
-          </div>
-          <div className="slide-image">
-            <img src={sadafko}></img>
-          </div>
-          <div className="slide-image">
-            <img src={safi}></img>
-          </div>
-          <div className="slide-image">
-            <img src={sadia}></img>
-          </div>
-          
-          </Slider>
+         <SlidingImageList1/>
         
           
         </div>
@@ -142,11 +99,9 @@ function Home(params) {
                   </p>
                 </div>
               </div>
-              <div className="d-flex justify-center">
-                <div className="c-sliding-images w-50">
-                  <div className="mt-5">
-                    <div className="c-images"></div>
-                  </div>
+              <div className="">
+                <div className="wrapper mt-5 mb-5">
+                  <SlidingImageList1/>
                 </div>
               </div>
             </div>
