@@ -20,7 +20,7 @@ const [toggleCard, setTogglerCard] = useState(true)
         </div>
         <div className="section-A-right">
           <div className="inner-container-A">
-            <div className={ toggleCard? "card-div-A-image toggleCard":"card-div-A-image"}>
+            <div className={ toggleCard? "card-div-A-image toggleCard":"card-div-A-image toggleCardReverse"}>
               <div className="inner-card-heading-right-A">
                 <h2>
                   <span className="orange">Spike</span>

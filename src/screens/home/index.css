@@ -126,6 +126,7 @@ h6 {
 .toggleCardReverse {
   transition: 0.8s;
   transform-style: preserve-3d;
+  transform: rotateY(0deg);
 }
 .card-div-A-content {
   width: 70%;
