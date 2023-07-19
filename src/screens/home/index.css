@@ -101,6 +101,8 @@ h6 {
   display: flex;
   justify-content: center;
   position: relative;
+  perspective: 1000px;
+  transition: transform 0.6s;
 }
 .card-div-A-image {
   background-color: white;
@@ -117,16 +119,18 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 3;
+  backface-visibility: hidden;
 }
 .toggleCard {
-  transform: rotateY(90deg);
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+
+}
+/* .toggleCardReverse {
   transition: 0.8s;
   transform-style: preserve-3d;
-}
-.toggleCardReverse {
-  transition: 0.8s;
-  transform-style: preserve-3d;
-}
+} */
 .card-div-A-content {
   width: 70%;
   background-color: white;
@@ -139,6 +143,8 @@ h6 {
   z-index: 3;
   padding: 40px;
   box-sizing: border-box;
+  /* backface-visibility: hidden; */
+  transform: rotateY(180deg);
 }
 
 .section-A {

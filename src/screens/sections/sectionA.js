@@ -1,7 +1,7 @@
 import React from "react"
 import { useState } from "react"
 function SectionA(params) {
-const [toggleCard, setTogglerCard] = useState(true)
+const [toggleCard, setToggleCard] = useState(false)
     return ( <div className="section-A" id="section-A">
     <div className="container-A wrapper d-flex justify-between">
       <div className="wrapper d-flex justify-between">
@@ -16,11 +16,11 @@ const [toggleCard, setTogglerCard] = useState(true)
             audience
           </p>
 
-          <button onClick={()=>setTogglerCard(!toggleCard)} className="btn btn-primary trial-btn mt-16 fs-10">START TRIAL{"→"}</button>
+          <button onClick={()=>setToggleCard(!toggleCard)} className="btn btn-primary trial-btn mt-16 fs-10">START TRIAL{"→"}</button>
         </div>
         <div className="section-A-right">
-          <div className="inner-container-A">
-            <div className={ toggleCard? "card-div-A-image toggleCard":"card-div-A-image"}>
+          <div className={`inner-container-A ${toggleCard? "toggleCard":""}`}>
+            <div className={"card-div-A-image"}>
               <div className="inner-card-heading-right-A">
                 <h2>
                   <span className="orange">Spike</span>
@@ -38,7 +38,7 @@ const [toggleCard, setTogglerCard] = useState(true)
 
                       </img> */}
             </div>
-            <div className={ !toggleCard? "card-div-A-content toggleCard":"card-div-A-content toggleCardReverse"} >
+            <div className={"card-div-A-content"} >
             <div class="text-center">
                                 <p class="text-muted mb-2 f-13 text-uppercase">Welcome To SpikeCom</p>
                                 <h5 class="form-dark mb-4">Start Your Free Trial</h5>
