@@ -5,6 +5,7 @@
   z-index: 4;
   background-color: #f5f7fa;
 }
+
 .slider {
   width: 400px;
   margin: 20px auto;
@@ -31,6 +32,10 @@
   .sign-in-btn {
     display: none;
   }
+  /* header {
+    z-index: 10;
+    position: fixed;
+  } */
 }
 
 @media only screen and (max-width: 991px) {
@@ -89,6 +94,28 @@ h6 {
 /* p{
     line-height: 25px
 } */
+.responsive_navbar {
+  position: fixed;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: white;
+}
+.mob-nav {
+  z-index: 4;
+  transform: translateY(-300px);
+  transition: opacity 0.6s ease, transform 0.3s ease;
+}
+.navbar-dropdown {
+  z-index: 4;
+  transform: translateY(0px);
+  transition: opacity 0.6s ease, transform 0.3s ease;
+}
+
+.navbar-dropdown.responsive_navbar ul li {
+  color: #141413;
+}
 
 .trial-btn {
   width: 160px;
@@ -96,12 +123,26 @@ h6 {
   cursor: pointer;
   border-radius: 0.3rem;
 }
-.inner-container-A {
+.card-A {
+  perspective: 1000px;
+}
+.inner-card-A {
   /* padding: 40px; */
   display: flex;
   justify-content: center;
   position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
+.card-A.toggleCard .inner-card-A {
+  transform: rotateY(180deg);
+}
+
+.card-div-A-image,
+.card-div-A-content {
+  backface-visibility: hidden;
+}
+
 .card-div-A-image {
   background-color: white;
   width: 70%;
@@ -118,16 +159,15 @@ h6 {
   background-repeat: no-repeat;
   z-index: 3;
 }
-.toggleCard {
-  transform: rotateY(90deg);
+/* .toggleCard {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+} */
+/* .toggleCardReverse {
   transition: 0.8s;
   transform-style: preserve-3d;
-}
-.toggleCardReverse {
-  transition: 0.8s;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-}
+} */
 .card-div-A-content {
   width: 70%;
   background-color: white;
@@ -140,6 +180,8 @@ h6 {
   z-index: 3;
   padding: 40px;
   box-sizing: border-box;
+  /* backface-visibility: hidden; */
+  transform: rotateY(180deg);
 }
 
 .section-A {
@@ -250,9 +292,11 @@ h6 {
 .image-slider {
   background-color: rgb(216, 203, 203);
 }
-.slide-image {
-  width: 15%;
+
+.slide-image img {
+  object-fit: contain;
 }
+
 .section-B {
   padding-top: 120px;
   padding-bottom: 120px;

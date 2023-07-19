@@ -1,7 +1,7 @@
 import React from "react";
 import icon12 from "../images/icon-12.png";
 
-function CInfoCard(props) {
+function PublisherBoxCard(props) {
   return (
     <div className="sec-c-outer-card">
       <div className="c-bottom-inner-sec1 p-12">
@@ -46,4 +46,4 @@ function CInfoCard(props) {
     </div>
   );
 }
-export default CInfoCard;
+export default PublisherBoxCard;

@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 import logo from "../images/logo-dark.png";
 import Hamburger from "hamburger-react";
 import { useState ,useEffect} from "react";
-
+import ResponsiveNavbar from "./responsive_navbar";
 function Header(params) {
     const [isOpen, setOpen] = useState(false);
     const [addNavClass, setAddNavClass] = useState(false);
@@ -35,8 +35,12 @@ function Header(params) {
             <span className="hamburger-button">
               <Hamburger toggled={isOpen} toggle={setOpen} />
             </span>
+           
+            
           </nav>
+          {<div className={`${isOpen? "navbar-dropdown":"mob-nav"}`}> <ResponsiveNavbar/> </div>}
         </div>
+      
       </header>
     )
 }

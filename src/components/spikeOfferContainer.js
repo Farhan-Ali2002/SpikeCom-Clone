@@ -1,5 +1,5 @@
 import React from "react";
-function CardBContainer(props) {
+function SpikeOfferContainer(props) {
     console.log("data",props.data);
     return <div className="card-b-container">
         <img className="B-icon" src={props.img}></img>
@@ -8,4 +8,4 @@ function CardBContainer(props) {
 
     </div>
 }
-export default CardBContainer
+export default SpikeOfferContainer
