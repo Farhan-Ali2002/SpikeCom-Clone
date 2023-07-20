@@ -38,6 +38,14 @@
   } */
 }
 
+@media only screen and (max-width: 474px) {
+  .inner-card-A .card-div-A-image {
+    min-height: 620px;
+    min-width: 350px;
+    width: 70%;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .spike-offers {
     display: block;
@@ -88,7 +96,7 @@ h4,
 h5,
 h6 {
   /* font-family: "Poppins", sans-serif; */
-  font-weight: 560;
+  font-weight: 500;
   line-height: 1.4;
 }
 /* p{

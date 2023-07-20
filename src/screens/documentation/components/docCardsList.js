@@ -1,5 +1,5 @@
 import React from "react";
-import docCardData from "../data/docListData";
+import docCardData from "../../../data/docListData";
 import DocCard from "./doc_card";
 
 function DocCardsList(params) {

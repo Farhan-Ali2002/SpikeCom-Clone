@@ -279,6 +279,19 @@ select option {
   src: local('PlayfairDisplay-Black'), url(./assets/fonts/PlayfairDisplay-Black.ttf) format('truetype');
   font-weight: 800;
 } */
+.primary-heading {
+  /* color: #f77b37; */
+  /* font-weight: 800; */
+  font-size: 52px;
+  margin: 0 0 40px;
+}
+.text-paragraph {
+  /* color: #121212; */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
 
 .ff-heading {
   font-family: "PlayfairDisplay" !important;
