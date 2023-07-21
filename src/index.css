@@ -174,6 +174,11 @@ select option {
   border: 3px solid #ddd;
 }
 
+@media (min-width: 992px) {
+  .offset-lg-1 {
+    margin-left: 8.33333333%;
+  }
+}
 /* @font-face {
   font-family: 'Poppins';
   src: local('Poppins-Thin'), url(./assets/fonts/Poppins-Thin.ttf) format('truetype');

@@ -16,6 +16,36 @@ function PublisherBoxCarousel() {
     slidesToScroll: 1,
  
     autoplaySpeed: 2000,
+    responsive: [
+      // {
+      //     breakpoint: 1724,
+      //     settings: {
+      //         slidesToShow: 3,
+      //         slidesToScroll: 3,
+      //         infinite: true,
+      //         // dots: true
+      //     }
+      // },
+      // {
+      //     breakpoint: 1250,
+      //     settings: {
+      //         slidesToShow: 2,
+      //         slidesToScroll: 2,
+      //         infinite: true,
+      //         // dots: true
+      //     }
+      // },
+      {
+          breakpoint: 900,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+          }
+      }
+  ]
+
+
+
   };
 
   return (

@@ -1,11 +1,48 @@
+/*  app header and navbar*/
+
 .on-scroll-header {
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 10px 0px rgba(63, 58, 100, 0.08);
   position: fixed;
   width: 100%;
   z-index: 4;
   background-color: #f5f7fa;
 }
 
+.navbar-wrapper {
+  padding: 15px 150px;
+}
+
+@media screen and (max-width: 1600px) {
+  .navbar-wrapper {
+    padding: 15px 0;
+  }
+}
+
+.navbar {
+  display: flex;
+  /* position: fixed; */
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list .nav-child {
+  all: unset;
+  display: inline-block;
+  margin-right: 28px;
+  font-weight: bold;
+  color: grey;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.nav-list .nav-item .nav-child:hover {
+  color: #ff8905;
+}
+
+.nav-list .nav-item {
+  all: unset;
+}
+
+/*  general   */
 .slider {
   width: 400px;
   margin: 20px auto;
@@ -39,7 +76,7 @@
 }
 
 @media only screen and (max-width: 474px) {
-  .inner-card-A .card-div-A-image {
+  .cardA-inner .image-cardA {
     min-height: 620px;
     min-width: 350px;
     width: 70%;
@@ -131,10 +168,12 @@ h6 {
   cursor: pointer;
   border-radius: 0.3rem;
 }
+
+/* Section A   */
 .card-A {
   perspective: 1000px;
 }
-.inner-card-A {
+.cardA-inner {
   /* padding: 40px; */
   display: flex;
   justify-content: center;
@@ -142,16 +181,16 @@ h6 {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
-.card-A.toggleCard .inner-card-A {
+.card-A.toggleCard .cardA-inner {
   transform: rotateY(180deg);
 }
 
-.card-div-A-image,
-.card-div-A-content {
+.image-cardA,
+.content-cardA {
   backface-visibility: hidden;
 }
 
-.card-div-A-image {
+.image-cardA {
   background-color: white;
   width: 70%;
   position: relative;
@@ -176,7 +215,7 @@ h6 {
   transition: 0.8s;
   transform-style: preserve-3d;
 } */
-.card-div-A-content {
+.content-cardA {
   width: 70%;
   background-color: white;
   box-shadow: 2px 2px 6px #888888;
@@ -194,7 +233,6 @@ h6 {
 
 .section-A {
   position: relative;
-
   width: 100%;
 }
 .header-and-A {
@@ -210,12 +248,12 @@ h6 {
     justify-content: center; */
 }
 
-.section-A-right {
-  /* width: 50%; */
-}
-
+/* section B*/
 @media screen and (max-width: 992px) {
   .container-A > div {
+    flex-direction: column;
+  }
+  .container .d-flex {
     flex-direction: column;
   }
 
@@ -235,24 +273,6 @@ h6 {
   }
 }
 
-.container-A,
-.container-B {
-  /* padding: 80px; */
-  font-family: "Poppins", sans-serif;
-  /* display: flex;
-    justify-content: space-around; */
-  margin-left: 400px;
-  margin-right: 400px;
-  /* max-width: 1140px !important; */
-  /* position: absolute; */
-}
-.inner-card-heading-right-A {
-  font-size: 24px;
-  font-weight: 600;
-}
-.inner-card-para-right-A {
-  font-size: 20px;
-}
 .mt-16 {
   margin-top: 16px;
 }
@@ -279,12 +299,12 @@ h6 {
   padding-right: 400px;
   align-items: center;
 }
-.orange-container-btn-div {
+/* .orange-container-btn-div {
   margin-left: 120px;
-}
+} */
 .orange-container-btn {
   height: 50px;
-  width: 140px;
+  /* width: 140px; */
   border: 1px solid white;
   border-color: white !important;
   /* background-color: #ff8905 !important; */
@@ -300,6 +320,17 @@ h6 {
 .image-slider {
   background-color: rgb(216, 203, 203);
 }
+.clients .slide-image {
+  opacity: 0.2;
+}
+.clients .slide-image:hover {
+  opacity: 1;
+  transition: 0.7s;
+}
+.clients {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
 .slide-image img {
   object-fit: contain;
@@ -309,6 +340,7 @@ h6 {
   padding-top: 120px;
   padding-bottom: 120px;
   width: 100%;
+  background-color: #f5f7fa;
 }
 .flex-B {
   display: flex;
@@ -356,7 +388,7 @@ h6 {
 
 .sec-b-top-section {
   text-align: center;
-  width: 460px;
+  /* width: 460px; */
 }
 .bef-sec-c-top-sec .text1 {
   font-size: 18px;
@@ -396,6 +428,7 @@ h6 {
 .section-C {
   margin-top: 80px;
   overflow: hidden;
+  background-color: #f5f7fa;
 }
 
 /* to be removed */
@@ -437,8 +470,8 @@ h6 {
 }
 @media screen and (max-width: 900px) {
   .slider-container {
-    width: 300%;
-    /* transform: translateX(-33.33%); */
+    width: 100%;
+    transform: translateX(0px);
   }
   .sec-c-outer-card {
     width: 100%;
@@ -507,6 +540,7 @@ h6 {
 
 .section-E {
   margin-top: 80px;
+  background-color: #f5f7fa;
 }
 .questions {
 }

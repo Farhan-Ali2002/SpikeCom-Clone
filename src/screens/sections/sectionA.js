@@ -4,7 +4,7 @@ function SectionA(params) {
   const [toggleCard, setToggleCard] = useState(false);
   return (
     <div className="section-A" id="section-A">
-      <div className="container-A wrapper d-flex justify-between">
+      <div className="container-A">
         <div className="wrapper d-flex justify-between">
           <div className="section-A-left">
             <h1 className="A-heading">
@@ -24,27 +24,26 @@ function SectionA(params) {
             </button>
           </div>
           <div className="section-A-right">
-            <div className={`card-A ${toggleCard ? "toggleCard" : ""}`}>
-              <div className={`inner-card-A`}>
-                <div className={"card-div-A-image"}>
-                  <div className="inner-card-heading-right-A">
+            <div
+              className={` offset-lg-1 card-A ${
+                toggleCard ? "toggleCard" : ""
+              }`}
+            >
+              <div className={`cardA-inner`}>
+                <div className={"image-cardA"}>
+                  <div className="card-content">
                     <h2>
                       <span className="orange">Spike</span>
                       Com
                     </h2>
-                  </div>
-                  <div>
-                    <p className="inner-card-para-right-A">
+
+                    <p>
                       Connecting publishers and advertisers under a single
                       platform
                     </p>
                   </div>
-                  {/* 
-                      <img className="card-img-A" src={cardImage}>
-
-                      </img> */}
                 </div>
-                <div className={"card-div-A-content"}>
+                <div className={"content-cardA"}>
                   <div class="text-center">
                     <p class="text-muted mb-2 f-13 text-uppercase">
                       Welcome To SpikeCom
@@ -121,7 +120,7 @@ function SectionA(params) {
           </div> */}
       <div class="bg-primary py-5">
         <div class="my-4">
-          <div class="container ">
+          <div class="container">
             <div class="wrapper d-flex align-items-center justify-content-start">
               <div class="col-lg-7">
                 <div class="text-start">

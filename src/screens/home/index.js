@@ -22,7 +22,7 @@ function Home(params) {
           <SectionA />
         </div>
         <div className="wrapper mt-4">
-          <div className="">
+          <div className="clients">
             <ImageSlider imageList={imageList1} />
           </div>
         </div>
