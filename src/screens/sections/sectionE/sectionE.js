@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import questionsImage from "../../images/Questions.png";
+import questionsImage from "../../../images/Questions.png";
+import "./sectionE.css"
 
 function SectionE(params) {
   const [expanded1, setExpanded1] = useState(false);

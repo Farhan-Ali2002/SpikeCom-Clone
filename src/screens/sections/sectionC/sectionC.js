@@ -1,8 +1,10 @@
 import React from "react";
-import ImageSlider from "../../components/image_slider";
-import PublisherBoxCarousel from "../../components/publisherbox_card_carousel";
-import imageList2 from "../../data/imageSlideList2";
-import imageList1 from "../../data/imageSlideList1";
+import ImageSlider from "../../../components/image_slider";
+import PublisherBoxCarousel from "../../../components/publisherbox_card_carousel";
+import imageList2 from "../../../data/imageSlideList2";
+import imageList1 from "../../../data/imageSlideList1";
+
+import "./sectionC.css";
 function SectionC(params) {
   return (
     <div className="section-C bg-light" id="section-C">
@@ -25,10 +27,9 @@ function SectionC(params) {
             </div>
           </div>
         </div>
-        {/* <div className="c-bottom-section d-flex "> */}
+       
         <PublisherBoxCarousel />
 
-        {/* </div> */}
       </div>
     </div>
   );

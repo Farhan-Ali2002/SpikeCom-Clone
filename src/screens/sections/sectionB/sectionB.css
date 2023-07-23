@@ -1,0 +1,22 @@
+.section-B {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 100%;
+  background-color: #f5f7fa;
+}
+
+.spike-offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 70px;
+  /* width: 1%; */
+}
+.cardB-container {
+  width: 30%;
+  margin: 14px;
+}
+.cardB-container img {
+  height: 40px;
+  width: 40px;
+}

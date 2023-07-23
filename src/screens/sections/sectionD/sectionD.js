@@ -1,5 +1,6 @@
 import React from "react";
-import screen from "../../images/laptop.png";
+import screen from "../../../images/laptop.png";
+import "./sectionD.css"
 function SectionD(params) {
   return (
     <div className="section-D" id="section-D">

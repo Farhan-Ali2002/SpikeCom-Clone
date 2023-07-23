@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./sectionA.css"
 function SectionA(params) {
   const [toggleCard, setToggleCard] = useState(false);
   return (

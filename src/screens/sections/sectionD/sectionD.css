@@ -1,0 +1,13 @@
+.section-D {
+  margin-top: 200px;
+}
+.D-section-left {
+}
+
+.D-section-right > div {
+  float: right;
+}
+
+.D-section-right > div p {
+  line-height: 25px;
+}

@@ -1,0 +1,50 @@
+.section-E {
+  margin-top: 80px;
+  background-color: #f5f7fa;
+}
+
+.question {
+  border: 1px solid #f5f7fa;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: top 0.45s cubic-bezier(0.44, 0.99, 0.48, 1);
+}
+.q-title h5 {
+  font-weight: 500;
+}
+.content {
+  padding: 20px;
+}
+.q-title {
+  margin-left: 8px;
+  padding: 20px;
+}
+h5 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.q-title p {
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.ques-expand-btn {
+  margin: 0;
+  position: relative;
+  top: 46px;
+  right: 10px;
+  border: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #ff8905;
+  color: #d8d2d2;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

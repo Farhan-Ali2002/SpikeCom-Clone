@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 import ImageSlider from "../../components/image_slider";
 import StatsGrid from "../../components/statsGrid";
 
-import SectionA from "../sections/sectionA";
+import SectionA from "../sections/sectionA/sectionA";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import SectionB from "../sections/sectionB";
-import SectionC from "../sections/sectionC";
-import SectionD from "../sections/sectionD";
-import SectionE from "../sections/sectionE";
+import SectionB from "../sections/sectionB/sectionB";
+import SectionC from "../sections/sectionC/sectionC";
+import SectionD from "../sections/sectionD/sectionD";
+import SectionE from "../sections/sectionE/sectionE";
 import imageList1 from "../../data/imageSlideList1";
 function Home(params) {
   return (
@@ -29,15 +29,17 @@ function Home(params) {
 
         <SectionB />
 
-        <div className="before-section-c">
-          <div className="bef-sec-c-top-sec">
+        <div className="counter">
+          <div className="wrapper">
+          <div className="d-flex align-items-center flex-column">
             <p className="text1">Simply, We Get Results</p>
-            <div className="text2">
+            <h2 className="text2">
               Whatever your needs,{" "}
               <span className="orange">We get it Done</span>
-            </div>
+            </h2>
           </div>
           <StatsGrid />
+          </div>
         </div>
         <SectionC />
         <SectionD />

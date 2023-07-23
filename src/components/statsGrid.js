@@ -5,7 +5,7 @@ import StatsContainer from "./statsContainer";
 function StatsGrid(params) {
  
   return (
-    <div className="stats wrapper">
+    <div className="stats">
       {statsData.map((data, i) => (
         <StatsContainer
           img={data.img}
