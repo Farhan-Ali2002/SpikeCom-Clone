@@ -1,15 +1,25 @@
 .section-E {
-  margin-top: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #f5f7fa;
 }
 
 .question {
-  border: 1px solid #f5f7fa;
+  border: 1px solid #cfd2d7;
   cursor: pointer;
   margin-bottom: 10px;
   border-radius: 10px;
   box-sizing: border-box;
-  transition: top 0.45s cubic-bezier(0.44, 0.99, 0.48, 1);
+  transition: height 0.6s;
+  height: 70px;
+  overflow: hidden;
+}
+.question h5 {
+  margin: 0;
+}
+
+.question.open {
+  height: 200px;
 }
 .q-title h5 {
   font-weight: 500;
@@ -19,7 +29,7 @@
 }
 .q-title {
   margin-left: 8px;
-  padding: 20px;
+  padding: 0px 20px;
 }
 h5 {
   font-size: 1.25rem;
@@ -47,4 +57,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.E-bottom-section .E-bottom-left-section {
+  width: 50%;
 }

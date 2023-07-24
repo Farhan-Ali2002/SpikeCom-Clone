@@ -4,6 +4,7 @@ import './App.css';
 import React from 'react';
 import Home from './screens/home'
 import AllRoutes from './routes/routes';
+import "@fontsource/poppins"; 
 import Documentation from './screens/documentation';
 import {BrowserRouter as Router, Routes, Route,Navigate} from "react-router-dom";
 // import { Router } from 'react-router-dom';

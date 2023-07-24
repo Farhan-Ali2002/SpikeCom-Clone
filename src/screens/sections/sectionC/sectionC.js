@@ -12,11 +12,11 @@ function SectionC(params) {
         <div className="c-top-section">
           <div className="d-flex justify-center">
             <div className="text-center">
-              <p className="fs-18">Register as a Publisher</p>
-              <h2 className="fs-34">
+              <p className="fs-16 text-muted">Register as a Publisher</p>
+              <h2 className="fs-32">
                 Join Our <span className="orange">Publisher</span> Network
               </h2>
-              <p className="fs-20">
+              <p className="fs-15 text-muted">
                 Get Started with SpikeCom & Rent your application's placements
               </p>
             </div>

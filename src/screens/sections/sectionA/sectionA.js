@@ -6,13 +6,13 @@ function SectionA(params) {
   return (
     <div className="section-A" id="section-A">
       <div className="container-A">
-        <div className="wrapper d-flex justify-between">
+        <div className="wrapper d-flex justify-between align-items-center">
           <div className="section-A-left">
             <h1 className="A-heading">
               <span className="orange">SpikeCom </span>
               In-App Media Ecosystem
             </h1>
-            <p>
+            <p className="text-muted fs-15">
               At a moment of truth, SpikeCom connects Advertisers and Publishers
               to Spike their communication with the right target audience
             </p>
@@ -24,21 +24,21 @@ function SectionA(params) {
               START TRIAL{"→"}
             </button>
           </div>
-          <div className="section-A-right">
+          <div className="section-A-right w-50">
             <div
-              className={` offset-lg-1 card-A ${
+              className={`card-A ${
                 toggleCard ? "toggleCard" : ""
               }`}
             >
               <div className={`cardA-inner`}>
                 <div className={"image-cardA"}>
                   <div className="card-content">
-                    <h2>
+                    <h2 className="fs-34">
                       <span className="orange">Spike</span>
                       Com
                     </h2>
 
-                    <p>
+                    <p className="fs-18">
                       Connecting publishers and advertisers under a single
                       platform
                     </p>
@@ -123,9 +123,9 @@ function SectionA(params) {
         <div class="my-4">
           <div class="container">
             <div class="wrapper d-flex align-items-center justify-content-start">
-              <div class="col-lg-7">
+              <div class="col-lg-7 w-60">
                 <div class="text-start">
-                  <p class="text-light">
+                  <p class="text-light fs-15">
                     Everyone's Using SpikeCom. We would love to have you in our
                     list. Lorem ipsum dolor, sit amet consectetur adipisicing
                     elit. Dolores deleniti omnis animi, quo perspiciatis dolore
@@ -134,8 +134,8 @@ function SectionA(params) {
                   </p>
                 </div>
               </div>
-              <div class="col-lg-3 ">
-                <div class="text-lg-end text-start orange-container-btn-div">
+              <div class="col-lg-3">
+                <div class="text-right orange-container-btn-div">
                   <button class="btn orange-container-btn">Read More</button>
                 </div>
               </div>

@@ -24,24 +24,24 @@ function Header(params) {
       };
     }, []); 
     return(
-        <header className={addNavClass? 'on-scroll-header':''}>
-        <div className="navbar-wrapper">
-          <nav className="navbar">
+        <div className={`${addNavClass? 'on-scroll-header':''}`}>
+          <div className="navbar">
+          <nav className="navbar-wrapper d-flex justify-between w-100 align-items-center">
             <img className="logo" height="40px" src={logo}></img>
 
             <Navbar />
             <button className="sign-in-btn">SIGN-IN NOW</button>
 
             <span className="hamburger-button">
-              <Hamburger toggled={isOpen} toggle={setOpen} />
+              <Hamburger size={20} toggled={isOpen} toggle={setOpen} />
             </span>
            
             
           </nav>
-          {<div className={`${isOpen? "navbar-dropdown":"mob-nav"}`}> <ResponsiveNavbar/> </div>}
-        </div>
+          {<div className={`${isOpen? "navbar-dropdown":"mob-nav"}`}> <ResponsiveNavbar/> </div>}          
       
-      </header>
+      </div>
+      </div>
     )
 }
 export default Header

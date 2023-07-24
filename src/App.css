@@ -1,37 +1,3 @@
-.navbar-wrapper {
-  padding: 15px 150px;
-}
-
-@media screen and (max-width: 1600px) {
-  .navbar-wrapper {
-    padding: 15px 0;
-  }
-}
-
-.navbar {
-  display: flex;
-  /* position: fixed; */
-  align-items: center;
-  justify-content: space-between;
-}
-.nav-list .nav-child {
-  all: unset;
-  display: inline-block;
-  margin-right: 28px;
-  font-weight: bold;
-  color: grey;
-  cursor: pointer;
-  font-size: 13px;
-}
-
-.nav-list .nav-item .nav-child:hover {
-  color: #ff8905;
-}
-
-.nav-list .nav-item {
-  all: unset;
-}
-
 .sign-in-btn {
   height: 45px;
   width: 160px;

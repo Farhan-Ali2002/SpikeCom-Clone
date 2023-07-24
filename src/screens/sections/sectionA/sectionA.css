@@ -1,10 +1,10 @@
 .card-A {
   perspective: 1000px;
+  margin-left: 95px;
 }
 .cardA-inner {
-  /* padding: 40px; */
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: end;
   position: relative;
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -20,12 +20,11 @@
 
 .image-cardA {
   background-color: white;
-  width: 70%;
   position: relative;
   top: 40px;
   min-height: 620px;
-  min-width: 400px;
-  box-shadow: 2px 2px 6px #888888;
+  width: 100%;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
   padding: 40px;
   box-sizing: border-box;
   text-align: center;
@@ -34,28 +33,17 @@
   background-repeat: no-repeat;
   z-index: 3;
 }
-/* .toggleCard {
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-  } */
-/* .toggleCardReverse {
-    transition: 0.8s;
-    transform-style: preserve-3d;
-  } */
+
 .content-cardA {
-  width: 70%;
   background-color: white;
-  box-shadow: 2px 2px 6px #888888;
-  /* position: absolute; */
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
   position: absolute;
   top: 40px;
   min-height: 620px;
-  min-width: 400px;
+  width: 100%;
   z-index: 3;
   padding: 40px;
   box-sizing: border-box;
-  /* backface-visibility: hidden; */
   transform: rotateY(180deg);
 }
 
@@ -69,9 +57,31 @@
 
 .section-A-left {
   width: 50%;
+}
 
-  margin-top: 150px;
-  /* display: flex;
-      flex-direction: column;
-      justify-content: center; */
+.form-label {
+  margin-bottom: 0.5rem;
+}
+label {
+  display: inline-block;
+}
+.registration-form .form-control {
+  padding: 0.5rem 0.75rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }

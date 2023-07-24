@@ -3,8 +3,8 @@ function SpikeOfferContainer(props) {
     console.log("data",props.data);
     return <div className="cardB-container">
         <img className="B-icon" src={props.img}></img>
-        <h4>{props.title}</h4>
-        <p>{props.desc}</p>
+        <h5 className="fs-20 fw-600">{props.title}</h5>
+        <p className="fs-15">{props.desc}</p>
 
     </div>
 }

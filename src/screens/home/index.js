@@ -29,14 +29,16 @@ function Home(params) {
 
         <SectionB />
 
-        <div className="counter">
+        <div className="counter pt-5 pb-5">
           <div className="wrapper">
-          <div className="d-flex align-items-center flex-column">
-            <p className="text1">Simply, We Get Results</p>
-            <h2 className="text2">
+          <div className="d-flex justify-center">
+            <div className="col-lg-6 text-center">
+            <p className="text1 text-muted fs-15">Simply, We Get Results</p>
+            <h2 className="text2 fs-32">
               Whatever your needs,{" "}
               <span className="orange">We get it Done</span>
             </h2>
+            </div>
           </div>
           <StatsGrid />
           </div>

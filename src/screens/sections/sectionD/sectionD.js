@@ -12,21 +12,21 @@ function SectionD(params) {
         </div>
         <div className="D-section-right">
           <div className=" w-80">
-            <h6 className="fs-18 m-0 mb-2 fw-normal">
+            <h6 className="fs-16 text-muted m-0 mb-2 fw-normal">
               Let your profit <b>grows & enjoy</b>
             </h6>
             <h1 className="fs-38 mt-2">
               Start using <br></br>
               <span className="orange fw-normal">SpikeCom</span>
             </h1>
-            <p className="fs-18 mt-3">
+            <p className="fs-15 mt-3">
               We bring together everything you need to manage, serve and track
               your ads on any platform. SpikeCom's products power ad serving for
               web sites, apps, marketplaces, retailers, email newsletters and
               everything in between.
             </p>
 
-            <p className="fs-22 orange">Sign In Now {"→"}</p>
+            <p className="fs-16 orange fw-600"> Sign-In Now {"→"}</p>
           </div>
         </div>
       </div>

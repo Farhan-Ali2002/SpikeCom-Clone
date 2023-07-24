@@ -25,30 +25,30 @@ function SectionE(params) {
       <div className="container-E wrapper">
         <div className="E-top-section d-flex justify-center">
           <div className="text-center">
-            <p className="fs-20">Quickly find the help you need</p>
+            <p className="fs-16 text-muted">Quickly find the help you need</p>
             <p className="fs-32 text-center">
               {" "}
               <span className="orange">Our Frequently Ask Question</span> <br />
               support center
             </p>
-            <p className="fs-20">
+            <p className="fs-16 text-muted">
               We'd love to hear from you. Let us know if we can help you with
               anything
             </p>
           </div>
         </div>
         <div className="E-bottom-section d-flex justify-center ">
-          <div className="E-bottom-left-section w-50 pt-4">
+          <div className="E-bottom-left-section pt-4">
             <button className="ques-expand-btn">{expanded1 ? "−" : "+"}</button>
             <div className="questions">
-              <div className="question " onClick={() => toggleContainer(1)}>
+              <div className={`question ${expanded1?"open":""}`} onClick={() => toggleContainer(1)}>
                 <div className="q-title ml-3">
                   <h5>Question 01 Random Text</h5>
                 </div>
-                {expanded1 && (
+                { (
                   <div className="content">
                     {/* Content to display */}
-                    <p>
+                    <p className="fs-15">
                       Vulputate lobortis tincidunt porttitor massa morbi
                       suscipit mollis luctus ullamcorper phasellus ante finibus
                       facilisis .
@@ -59,14 +59,14 @@ function SectionE(params) {
               <button className="ques-expand-btn">
                 {expanded2 ? "−" : "+"}
               </button>
-              <div className="question " onClick={() => toggleContainer(2)}>
+              <div className={`question ${expanded2?"open":""}`} onClick={() => toggleContainer(2)}>
                 <div className="q-title">
                   <h5>Question 02 Random Text</h5>
                 </div>
-                {expanded2 && (
+                { (
                   <div className="content">
                     {/* Content to display */}
-                    <p>
+                    <p className="fs-15">
                       Quisque tincidunt the malesuada aliquet ullamcorper
                       Suspendisse lectus congue iaculis vitae purus Nullam.
                     </p>
@@ -76,14 +76,14 @@ function SectionE(params) {
               <button className="ques-expand-btn">
                 {expanded3 ? "−" : "+"}
               </button>
-              <div className="question" onClick={() => toggleContainer(3)}>
+              <div className={`question ${expanded3?"open":""}`} onClick={() => toggleContainer(3)}>
                 <div className="q-title">
                   <h5>Question 03 Random Text</h5>
                 </div>
-                {expanded3 && (
+                { (
                   <div className="content">
                     {/* Content to display */}
-                    <p>
+                    <p className="fs-15">
                       Pellentesque tincidunt imperdiet metus interdum ligula
                       tristique aenean facilisis congue congue libero interdum
                       venenatis scelerisque sed massa elit pulvinar gravida.
@@ -94,14 +94,14 @@ function SectionE(params) {
               <button className="ques-expand-btn">
                 {expanded4 ? "−" : "+"}
               </button>
-              <div className="question" onClick={() => toggleContainer(4)}>
+              <div className={`question ${expanded4?"open":""}`} onClick={() => toggleContainer(4)}>
                 <div className="q-title">
                   <h5>Question 04 Random Text</h5>
                 </div>
-                {expanded4 && (
+                { (
                   <div className="content">
                     {/* Content to display */}
-                    <p>
+                    <p className="fs-15">
                       Vestibulum sodales turpis vestibulum praesent consectetur
                       magna tortor interdum neque.
                     </p>
