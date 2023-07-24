@@ -32,13 +32,22 @@ section.search-banner .text-paragraph {
 }
 .doc-header {
   /* background-color: #ff8905; */
+  padding: 15px 0;
   background-color: transparent;
+  transition: all 0.5s ease;
+}
+.doc-navbar {
+  transition: all 0.5s ease;
 }
 
 section.search-banner {
   padding: 100px 0px;
 }
-
+.doc-header.on-scroll-header {
+  transition: all 0.5s ease;
+  background-color: white;
+  box-shadow: 0px 3px 10px 0px rgba(63, 58, 100, 0.08);
+}
 div.doc-top-section {
   background-size: cover;
   background-position: center;
@@ -297,4 +306,13 @@ section.doc-contents ul li {
 .col-lg-4 {
   flex: 0 0 auto;
   width: 33.33333333%;
+}
+section.doc-contents {
+  padding: 40px 0px 100px;
+  background-color: #fff;
+}
+.doc-btn {
+  background-color: #11095f;
+  color: white;
+  opacity: 0.8;
 }

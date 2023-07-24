@@ -1,18 +1,36 @@
 import React from "react";
 import logo from '../../../images/logo-dark.png'
 import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 function DocTopSection(params) {
+    const [addNavClass, setAddNavClass] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollY = window.scrollY;
+        // Replace 'your-scroll-threshold' with the scroll position where you want the class to be added
+        setAddNavClass(scrollY > 5);
+      };
+  
+      // Attach the scroll event listener when the component mounts
+      window.addEventListener('scroll', handleScroll);
+  
+      // Clean up the event listener when the component unmounts
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []); 
     return(
         <div className='doc-top-section'>
-        <header className="doc-header">
+        <header className={`${addNavClass? 'on-scroll-header':'' }  doc-header`}>
         <div className="navbar-wrapper">
-        <nav className="navbar">
+        <nav className="doc-navbar d-flex justify-between">
         
         <img className = "logo" height="40px"  src={logo}></img>
       
         {/* <Navbar/> */}
 
-        <button className="sign-in-btn">SIGN-IN NOW</button>
+        <button className="btn doc-btn">SIGN-IN NOW</button>
         </nav>
         </div>
       </header>    
