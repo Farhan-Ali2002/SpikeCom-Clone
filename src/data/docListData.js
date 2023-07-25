@@ -1,5 +1,6 @@
-import { ReactComponent as icon1 } from "../images/vector2.svg";
-import { ReactComponent as icon2 } from "../images/vector3.svg";
+
+import { ReactComponent as icon1 } from "../images/vector3.svg";
+import { ReactComponent as icon2 } from "../images/vector12.svg";
 import { ReactComponent as icon3 } from "../images/vector4.svg";
 import { ReactComponent as icon4 } from "../images/vector5.svg";
 import { ReactComponent as icon5 } from "../images/vector6.svg";
@@ -8,7 +9,8 @@ import { ReactComponent as icon7 } from "../images/vector8.svg";
 import { ReactComponent as icon8 } from "../images/vector9.svg";
 import { ReactComponent as icon9 } from "../images/vector10.svg";
 import { ReactComponent as icon10 } from "../images/vector11.svg";
-import { ReactComponent as icon11 } from "../images/vector12.svg";
+import { ReactComponent as icon11 } from "../images/vector2.svg";
+
 import { ReactComponent as icon12 } from "../images/vector.svg";
 import { ReactComponent as icon13 } from "../images/vector.svg";
 import { ReactComponent as icon14 } from "../images/vector.svg";

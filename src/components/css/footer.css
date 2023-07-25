@@ -1,0 +1,29 @@
+.footer {
+  background-color: #322f48;
+  color: #f5f7fa;
+}
+ul li {
+  list-style: none;
+  margin: 0px 0px 12px;
+}
+.footer-sec-2 ul,
+.footer-sec-3 ul,
+.footer-sec-4 ul {
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.footer-sec-1 p {
+  line-height: 25px;
+}
+
+.footer ul li a {
+  color: #f5f7fa;
+}
+
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}

@@ -12,7 +12,7 @@ function PublisherBoxCard(props) {
       </div>
       <div className=" publisherbox-bottom mt-4">
         <div className="d-flex flex-wrap justify-between">
-          <div className="publisherbox-inner-card mb-3">
+          <div className="publisherbox-inner-card mb-3 p-4">
             <div className="mb-2">
               <img src={icon12}></img>
             </div>
@@ -20,21 +20,21 @@ function PublisherBoxCard(props) {
             <p className="fs-15">Monthly Impressions</p>
           </div>
 
-          <div className="publisherbox-inner-card mb-3">
+          <div className="publisherbox-inner-card mb-3 p-4">
             <div className="mb-2">
               <img src={icon12}></img>
             </div>
             <h4 className="fs-24 fw-600">{props.num2}</h4>
             <p className="fs-15">Average Sessions</p>
           </div>
-          <div className="publisherbox-inner-card">
+          <div className="publisherbox-inner-card p-4">
             <div className="">
               <img src={icon12}></img>
             </div>
             <h4 className="fs-24 fw-600">{props.num3}</h4>
             <p className="fs-15">Monthly Users</p>
           </div>
-          <div className="publisherbox-inner-card ">
+          <div className="publisherbox-inner-card p-4">
             <div className="mb-2">
               <img src={icon12}></img>
             </div>

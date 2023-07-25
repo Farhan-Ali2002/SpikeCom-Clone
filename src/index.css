@@ -298,13 +298,13 @@ select option {
 .primary-heading {
   /* color: #f77b37; */
   /* font-weight: 800; */
-  font-size: 52px;
+  font-size: 34px;
   margin: 0 0 40px;
 }
 .text-paragraph {
   /* color: #121212; */
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   margin: 0;
 }
@@ -510,6 +510,9 @@ select option {
 }
 .p-0 {
   padding: 0 0 0 0 !important;
+}
+.p-4 {
+  padding: 1.5rem;
 }
 .p-12 {
   padding: 12px;
@@ -1325,7 +1328,6 @@ body .carousal-wrapper {
 @media screen and (max-width: 1240px) {
   .btn {
     font-size: 14px;
-    padding: 0px 20px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1449,33 +1451,4 @@ body .carousal-wrapper {
 
 .react-loading-skeleton::after {
   z-index: 1;
-}
-.footer {
-  background-color: #322f48;
-  color: #f5f7fa;
-}
-ul li {
-  list-style: none;
-  margin: 0px 0px 12px;
-}
-.footer-sec-2 ul,
-.footer-sec-3 ul,
-.footer-sec-4 ul {
-  padding: 0;
-  margin-top: 3rem;
-}
-
-.footer-sec-1 p {
-  line-height: 25px;
-}
-
-.footer ul li a {
-  color: #f5f7fa;
-}
-
-@media (min-width: 992px) {
-  .col-lg-6 {
-    flex: 0 0 auto;
-    width: 50%;
-  }
 }

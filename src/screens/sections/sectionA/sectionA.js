@@ -17,11 +17,11 @@ function SectionA(params) {
               to Spike their communication with the right target audience
             </p>
 
-            <button
+            <button 
               onClick={() => setToggleCard(!toggleCard)}
               className="btn btn-primary trial-btn mt-16 fs-10"
             >
-              START TRIAL{"→"}
+              START TRIAL <span>→</span>
             </button>
           </div>
           <div className="section-A-right w-50">

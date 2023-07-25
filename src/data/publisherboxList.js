@@ -4,7 +4,7 @@ import quickmarketlogo from "../images/logo-quick-market.png";
 import carrefourlogo from "../images/logo-carrefour.png";
 
 import danubelogo from "../images/logo-danube.png";
-// import clicflyerlogo from "../images/logo-clicflyer.png"
+import clicflyer from "../images/logo-clicflyer (1).png"
 import jahezlogo from "../images/logo-jahez.png";
 import hungerstationlogo from "../images/logo-hungerstation.png";
 import lululogo from "../images/logo-lulu.png";
@@ -39,7 +39,7 @@ let CinfoCardData = [
       num4: "+4M",
     },
     {
-      logo: jahezlogo,
+      logo: clicflyer,
       desc: "Clicflyer is the highest rated & frequently used app in its category. It is making weekly savings easy for it's valuable customers. It offers features including browsing flyers, create shopping list & find your faviorite offers",
       num1: "+127M",
       num2: "+15M",

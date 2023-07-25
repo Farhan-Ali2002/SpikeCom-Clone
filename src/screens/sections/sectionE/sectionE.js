@@ -42,7 +42,7 @@ function SectionE(params) {
             <button className="ques-expand-btn">{expanded1 ? "−" : "+"}</button>
             <div className="questions">
               <div className={`question ${expanded1?"open":""}`} onClick={() => toggleContainer(1)}>
-                <div className="q-title ml-3">
+                <div className="q-title">
                   <h5>Question 01 Random Text</h5>
                 </div>
                 { (

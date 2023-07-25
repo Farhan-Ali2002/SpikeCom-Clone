@@ -4,7 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ImageSlider from "../../components/image_slider";
 import StatsGrid from "../../components/statsGrid";
-
+import "../../components/css/header.css";
+import "../../components/css/footer.css"
 import SectionA from "../sections/sectionA/sectionA";
 import Header from "../../components/header";
 import Footer from "../../components/footer";

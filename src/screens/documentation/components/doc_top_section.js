@@ -34,8 +34,8 @@ function DocTopSection(params) {
         </nav>
         </div>
       </header>    
-        <section className='search-banner d-flex justify-center'>
-            <div className='wrapper text-center p-3'>
+        <section className='search-banner'>
+            <div className='search-wrapper text-center p-3'>
                 <h1 className='primary-heading'>SpikeCom Knowledge Base</h1>
                 <p className="text-paragraph">Everything you need to know about SpikeCom</p>
                 <form autocomplete="off" action="/documentation">

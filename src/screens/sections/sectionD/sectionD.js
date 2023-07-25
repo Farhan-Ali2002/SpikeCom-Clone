@@ -4,14 +4,25 @@ import "./sectionD.css"
 function SectionD(params) {
   return (
     <div className="section-D" id="section-D">
-      <div className="container-D wrapper d-flex justify-center">
-        <div className="D-section-left d-flex justify-center">
+      <div className="container d-flex align-items-center">
+        <div className="D-section-left">
+         
           <div className="D-screen-img-container">
             <img src={screen} height="380px" alt="screen"></img>
           </div>
+          <div id="imgcontainer-1">
+                            <div id="inner" style={{transform:"rotateX(-1.34deg) rotateY(-0.44deg)"}}>
+                                <div class="demo-img">
+                                    <div class="demo-overlay">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
         </div>
+   
         <div className="D-section-right">
-          <div className=" w-80">
+          <div className="">
             <h6 className="fs-16 text-muted m-0 mb-2 fw-normal">
               Let your profit <b>grows & enjoy</b>
             </h6>
