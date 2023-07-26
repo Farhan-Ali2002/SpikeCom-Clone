@@ -26,11 +26,11 @@ function SectionE(params) {
         <div className="E-top-section d-flex justify-center">
           <div className="text-center">
             <p className="fs-16 text-muted">Quickly find the help you need</p>
-            <p className="fs-32 text-center">
+            <h2 className="fs-32 text-center">
               {" "}
               <span className="orange">Our Frequently Ask Question</span> <br />
               support center
-            </p>
+            </h2>
             <p className="fs-16 text-muted">
               We'd love to hear from you. Let us know if we can help you with
               anything

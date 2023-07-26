@@ -25,9 +25,9 @@ function DocTopSection(params) {
         <header className={`${addNavClass? 'on-scroll-header':'' }  doc-header`}>
         <div className="navbar-wrapper">
         <nav className="doc-navbar d-flex justify-between">
-        
+       <NavLink to={"/"}>
         <img className = "logo" height="40px"  src={logo}></img>
-      
+        </NavLink>
         {/* <Navbar/> */}
 
         <button className="btn doc-btn">SIGN-IN NOW</button>

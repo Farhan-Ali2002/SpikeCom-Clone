@@ -190,6 +190,37 @@ select option {
     margin-left: 8.33333333%;
   }
 }
+
+.h1,
+h1 {
+  font-size: calc(1.375rem + 1.5vw) !important;
+}
+
+.h2,
+h2,
+h2 span {
+  font-size: calc(1.325rem + 0.9vw) !important;
+}
+
+.h5,
+h5 {
+  font-size: 1.25rem !important;
+}
+@media (min-width: 1200px) {
+  .h1,
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  .h2,
+  h2,
+  h2 span {
+    font-size: 2rem !important;
+  }
+  .counter-box-div h2 {
+    font-size: 64px !important;
+  }
+}
+
 /* @font-face {
   font-family: 'Poppins';
   src: local('Poppins-Thin'), url(./assets/fonts/Poppins-Thin.ttf) format('truetype');

@@ -4,6 +4,7 @@ import logo from "../images/logo-dark.png";
 import Hamburger from "hamburger-react";
 import { useState ,useEffect} from "react";
 import ResponsiveNavbar from "./responsive_navbar";
+import { NavLink } from "react-router-dom";
 function Header(params) {
     const [isOpen, setOpen] = useState(false);
     const [addNavClass, setAddNavClass] = useState(false);
@@ -24,11 +25,12 @@ function Header(params) {
       };
     }, []); 
     return(
-        <div className={`${addNavClass? 'on-scroll-header':''}`}>
+        <div style={{transition:"all 0.5s ease"}} className={`${addNavClass? 'on-scroll-header':''}`}>
           <div className="navbar">
           <nav className="navbar-wrapper d-flex justify-between w-100 align-items-center">
+            <NavLink to={"/"}>
             <img className="logo" height="40px" src={logo}></img>
-
+            </NavLink>
             <Navbar />
             <button className="sign-in-btn">SIGN-IN NOW</button>
 

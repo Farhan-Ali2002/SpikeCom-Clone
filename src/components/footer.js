@@ -1,12 +1,15 @@
 import React from "react";
 import logo from "../images/logo-light.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavLink } from "react-router-dom";
+import FacebookBoxFillIcon from 'remixicon-react/FacebookBoxFillIcon';
+import TwitterFillIcon from 'remixicon-react/TwitterFillIcon';
+import InstagramIcon from 'remixicon-react/InstagramLineIcon';
+import LinkedInIcon from 'remixicon-react/LinkedinBoxFillIcon';
 import { HashLink } from "react-router-hash-link";
+import { NavLink } from "react-router-dom";
 function Footer(params) {
   return (
     <div className="footer py-5">
-      <div className="wrapper container">
+      <div className="container">
         <div className="row d-flex flex-wrap">
           <div className="col-lg-3">
         <div className="footer-sec-1 d-flex flex-wrap">
@@ -20,11 +23,12 @@ function Footer(params) {
               right target audience
             </p>
           </div>
-          <div className="footer-icons">
-          <FontAwesomeIcon icon="fa-brands fa-facebook-f" style={{color: "#f5f9ff",}} />
-          <FontAwesomeIcon icon="fa-brands fa-facebook-f" style={{color: "#f5f9ff",}} />
-          <FontAwesomeIcon icon="fa-brands fa-facebook-f" style={{color: "#f5f9ff",}} />
-          <FontAwesomeIcon icon="fa-brands fa-facebook-f" style={{color: "#f5f9ff",}} />
+          <div className="footer-icons d-flex">
+          <FacebookBoxFillIcon className=""></FacebookBoxFillIcon>
+          <TwitterFillIcon className="ml-4"></TwitterFillIcon>
+          <InstagramIcon className="ml-4"></InstagramIcon>
+          <LinkedInIcon className="ml-4"></LinkedInIcon>
+         
       
           </div>
         </div>
